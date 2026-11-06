@@ -1,0 +1,10 @@
+{
+  "items": [
+    { "id": "g1", "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/26e2f0666_generated_c5a88192.png", "caption": "Canal mornings, Venice" },
+    { "id": "g2", "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/3ab4cf5c2_generated_27b4887a.png", "caption": "Alpine water, Austria" },
+    { "id": "g3", "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/90eff07d3_generated_8fd2259b.png", "caption": "Blue doors, Greece" },
+    { "id": "g4", "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/de9923d2b_generated_8503f4fd.png", "caption": "Meadow light, South Tyrol" },
+    { "id": "g5", "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/5274f403d_generated_d68bdeb7.png", "caption": "Siesta hour, Andalusia" },
+    { "id": "g6", "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/4ff6f6458_generated_ecd8710e.png", "caption": "Market morning, Provence" }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "items": [
+    {
+      "id": "italy",
+      "name": "Italy",
+      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/7f9933309_generated_864188d5.png",
+      "description": "Terraced coastlines in the south, lake villas in the north, and cypress roads in between. Italy rewards travellers who leave space in the day for a second coffee.",
+      "experiences": ["Coastal boat mornings", "Hill-town food walks", "Villa garden visits"],
+      "bestSeason": "April to June, September to October",
+      "featuredTourId": "amalfi-coast"
+    },
+    {
+      "id": "switzerland",
+      "name": "Switzerland",
+      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/f189df3d2_generated_1adb3833.png",
+      "description": "The most precise travel in Europe: trains that meet the lake boats, trails that start at the platform, and air you notice on the first morning.",
+      "experiences": ["Glacier rail journeys", "Ridge walks", "Lakeside village stays"],
+      "bestSeason": "June to September, December to March for snow",
+      "featuredTourId": "swiss-alps"
+    },
+    {
+      "id": "france",
+      "name": "France",
+      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/2d685cce3_generated_827bd2e7.png",
+      "description": "Paris for the museums and the long lunches, Provence for lavender roads and stone farmhouses, and both for the way an afternoon can simply be spent at a table.",
+      "experiences": ["Paris at dawn", "Market mornings", "Provence village drives"],
+      "bestSeason": "May to June, September",
+      "featuredTourId": "paris"
+    },
+    {
+      "id": "greece",
+      "name": "Greece",
+      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/fa3bf36a4_generated_89866ef9.png",
+      "description": "Whitewashed villages, water in shades you will try to describe and fail, and tavernas where the fish arrived that morning. Best in the shoulder weeks.",
+      "experiences": ["Caldera sunsets", "Small-boat island hops", "Village table dinners"],
+      "bestSeason": "May to June, September to early October",
+      "featuredTourId": "santorini"
+    },
+    {
+      "id": "austria",
+      "name": "Austria",
+      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/ed649cd54_generated_2ecda3e2.png",
+      "description": "Lake villages with a church spire, mountain roads that end in a cable car, and coffee houses built for an unhurried hour. Quieter than its neighbours, and all the better for it.",
+      "experiences": ["Alpine lake swimming", "Mountain cable ascents", "Coffee house afternoons"],
+      "bestSeason": "June to September",
+      "featuredTourId": "swiss-alps"
+    },
+    {
+      "id": "spain",
+      "name": "Spain",
+      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/c209b1cc4_generated_06cd9181.png",
+      "description": "Andalusian hill towns, orange trees in small plazas and a late dinner culture that takes some getting used to and then ruins you for everywhere else.",
+      "experiences": ["White hill towns", "Tapas evenings", "Olive grove drives"],
+      "bestSeason": "March to May, October to November",
+      "featuredTourId": "santorini"
+    }
+  ]
+}

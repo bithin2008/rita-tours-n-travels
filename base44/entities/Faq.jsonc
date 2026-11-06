@@ -1,0 +1,62 @@
+{
+  "name": "Faq",
+  "type": "object",
+  "properties": {
+    "question": {
+      "type": "string",
+      "description": "The visitor's question"
+    },
+    "answer": {
+      "type": "string",
+      "description": "Plain-language answer shown in the accordion"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "travel",
+        "payments",
+        "visa",
+        "general"
+      ],
+      "enumColors": [
+        "blue",
+        "green",
+        "purple",
+        "gray"
+      ],
+      "default": "travel",
+      "description": "Topic used by the filter chips"
+    },
+    "sort_order": {
+      "type": "number",
+      "description": "Lower numbers appear first"
+    },
+    "published": {
+      "type": "boolean",
+      "default": true,
+      "description": "Uncheck to hide from the website"
+    }
+  },
+  "required": [
+    "question",
+    "answer"
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": {},
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "note": "Sample guest stories written to show this page's layout. Replace with real, consented testimonials before launch.",
+  "summary": {
+    "rating": 4.9,
+    "reviews": 1240,
+    "recommend": 96,
+    "repeat": 41
+  },
+  "badges": [
+    { "icon": "star", "value": "4.9 / 5", "label": "1,240 verified reviews" },
+    { "icon": "heart", "value": "96%", "label": "Would travel with us again" },
+    { "icon": "shield", "value": "Protected", "label": "EU package travel cover" },
+    { "icon": "clock", "value": "24/7", "label": "Emergency line on the road" }
+  ],
+  "featured": {
+    "name": "Elena & Marco Pellegrini",
+    "location": "Milan, Italy",
+    "journey": "Amalfi & Campania · 9 days · September 2026",
+    "title": "The coast, rearranged twice — and better for it",
+    "quote": "We had already booked a hotel in Positano when our planner asked what we actually wanted from the week. The honest answer was quiet evenings, not beach clubs. She moved our base two villages along, put the busy days at the start, and left the last three days almost empty. Best of all, she kept the original booking refundable while we decided. Nothing felt like a sales conversation.",
+    "image": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "A terraced coastal village on the Amalfi Coast at dusk",
+    "stats": [
+      { "value": "9", "label": "days away" },
+      { "value": "3", "label": "bases, all reached by train" },
+      { "value": "0", "label": "flights taken" }
+    ]
+  },
+  "photoReviews": [
+    {
+      "id": "photo-one",
+      "image": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1200&q=80",
+      "imageAlt": "Whitewashed houses above the caldera in Santorini",
+      "caption": "First morning in Oia, before the cruise crowds. Our planner told us to set an alarm — we are not morning people, but she was right.",
+      "name": "Priya Raman",
+      "trip": "Cyclades family journey · September 2026",
+      "rating": 5
+    },
+    {
+      "id": "photo-two",
+      "image": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1200&q=80",
+      "imageAlt": "Cliffside village on the Italian coast",
+      "caption": "The terrace we almost skipped. We asked for a quiet last evening and got this, four steps from the room and nowhere to be.",
+      "name": "Rui & Beatriz Almeida",
+      "trip": "Amalfi & Campania · May 2026",
+      "rating": 5
+    },
+    {
+      "id": "photo-three",
+      "image": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1200&q=80",
+      "imageAlt": "Mountain hut beneath the Dolomites at sunrise",
+      "caption": "5.40am at the hut. The only reason I was awake is that the plan said so — and the plan was right.",
+      "name": "Daniel Okafor",
+      "trip": "Dolomites hut-to-hut · July 2026",
+      "rating": 5
+    }
+  ],
+  "reviews": [
+    {
+      "id": "review-one",
+      "title": "The terrace we almost skipped",
+      "quote": "Nobody had asked us what we wanted to be doing at six in the evening. Everything after that question was built around the answer.",
+      "name": "Rui Almeida",
+      "location": "Porto, Portugal",
+      "trip": "Amalfi & Campania · 7 days",
+      "region": "Italy",
+      "date": "May 2026",
+      "rating": 5
+    },
+    {
+      "id": "review-two",
+      "title": "Milan to Rome without a single airport",
+      "quote": "Three trains, two hotel changes, zero stress. Our planner sent platform numbers and a note on which side of the carriage to sit.",
+      "name": "James Whitfield",
+      "location": "Bristol, United Kingdom",
+      "trip": "Rail through Italy · 10 days",
+      "region": "Italy",
+      "date": "April 2026",
+      "rating": 5
+    },
+    {
+      "id": "review-three",
+      "title": "A hike I didn't think I could do",
+      "quote": "They cut the second day in half without making me feel like a problem. I still finished the route, and I still got the view.",
+      "name": "Daniel Okafor",
+      "location": "Berlin, Germany",
+      "trip": "Dolomites hut-to-hut · 5 days",
+      "region": "The Alps",
+      "date": "July 2026",
+      "rating": 5
+    },
+    {
+      "id": "review-four",
+      "title": "The train window was the holiday",
+      "quote": "Bernina in second class, lunch from a bakery, and a hotel that met us at the station. Simple things, arranged properly.",
+      "name": "Clara Hoffmann",
+      "location": "Hamburg, Germany",
+      "trip": "Bernina & Engadin · 6 days",
+      "region": "The Alps",
+      "date": "June 2026",
+      "rating": 5
+    },
+    {
+      "id": "review-five",
+      "title": "Santorini with three children and no meltdowns",
+      "quote": "Ferries timed around naps, an apartment with a kitchen, and a guide who genuinely liked our kids. That is not luck, that is planning.",
+      "name": "Priya Raman",
+      "location": "Bengaluru, India",
+      "trip": "Cyclades family journey · 10 days",
+      "region": "Greece",
+      "date": "September 2026",
+      "rating": 5
+    },
+    {
+      "id": "review-six",
+      "title": "Our honeymoon was planned in two calls",
+      "quote": "We were exhausted from wedding admin. One call to hear what we wanted, one to confirm, and then it simply happened.",
+      "name": "Anna & Tomáš Novák",
+      "location": "Prague, Czechia",
+      "trip": "Aegean slow journey · 8 days",
+      "region": "Greece",
+      "date": "August 2026",
+      "rating": 5
+    },
+    {
+      "id": "review-seven",
+      "title": "Lisbon in the rain, still perfect",
+      "quote": "Our walking day was washed out and a message came through before breakfast with a replacement: tiled interiors, a bookshop, a long lunch. We never once opened a map ourselves.",
+      "name": "Sophie Laurent",
+      "location": "Paris, France",
+      "trip": "Portugal cities · 5 days",
+      "region": "Iberia",
+      "date": "March 2026",
+      "rating": 5
+    },
+    {
+      "id": "review-eight",
+      "title": "A last-minute change saved the week",
+      "quote": "A rail strike was announced the day we flew. They rebooked the whole middle of the trip by the time we landed in Málaga, and we paid nothing extra.",
+      "name": "Nadia El-Sayed",
+      "location": "Rotterdam, Netherlands",
+      "trip": "Andalusia by rail · 9 days",
+      "region": "Iberia",
+      "date": "February 2026",
+      "rating": 5
+    },
+    {
+      "id": "review-nine",
+      "title": "Vienna with my mother, aged 78",
+      "quote": "Every transfer was short, every hotel had a lift, and there were proper chairs at every stop. She has already asked when we are going again.",
+      "name": "Marta Kowalska",
+      "location": "Warsaw, Poland",
+      "trip": "Vienna & Budapest by rail · 6 days",
+      "region": "Cities",
+      "date": "October 2026",
+      "rating": 5
+    }
+  ]
+}

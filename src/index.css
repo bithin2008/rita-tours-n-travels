@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* RITA brand tokens — Midnight Navy, Cloud White, Electric Blue, Coral, Mint, Sunshine */
+    --background: 210 54% 98%;
+    --foreground: 218 74% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 218 74% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 218 74% 15%;
+    --primary: 220 100% 56%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 218 74% 15%;
+    --muted: 210 36% 95%;
+    --muted-foreground: 218 20% 40%;
+    --accent: 174 77% 43%;
+    --accent-foreground: 218 74% 12%;
+    --destructive: 10 100% 61%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 24% 89%;
+    --input: 214 24% 89%;
+    --ring: 220 100% 56%;
+    --chart-1: 220 100% 56%;
+    --chart-2: 174 77% 43%;
+    --chart-3: 10 100% 61%;
+    --chart-4: 41 100% 64%;
+    --chart-5: 218 74% 15%;
+    --radius: 0.9rem;
+    --font-heading: "Poppins", ui-sans-serif, system-ui, sans-serif;
+    --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+    --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 218 74% 15%;
+    --sidebar-primary: 220 100% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 218 74% 15%;
+    --sidebar-border: 214 24% 89%;
+    --sidebar-ring: 220 100% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: clip;
+  }
+
+  h1, h2, h3, h4, h5 {
+    @apply font-heading;
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 2px solid #1e6bff;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background: #1e6bff;
+    color: #ffffff;
+  }
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto w-full max-w-[1240px] px-5 sm:px-8;
+  }
+
+  .section {
+    @apply py-20 sm:py-24 lg:py-28;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#1E6BFF];
+  }
+
+  .no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card-shadow {
+    box-shadow: 0 25px 50px -12px rgba(10, 31, 68, 0.16);
+  }
+
+  .soft-shadow {
+    box-shadow: 0 12px 30px -18px rgba(10, 31, 68, 0.35);
+  }
+
+  .range-brand {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    border-radius: 999px;
+    outline: none;
+  }
+
+  .range-brand::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 999px;
+    background: #ffffff;
+    border: 3px solid #1e6bff;
+    box-shadow: 0 6px 14px -6px rgba(10, 31, 68, 0.55);
+    cursor: grab;
+    transition: transform 0.15s ease;
+  }
+
+  .range-brand::-webkit-slider-thumb:active {
+    cursor: grabbing;
+    transform: scale(1.08);
+  }
+
+  .range-brand::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 999px;
+    background: #ffffff;
+    border: 3px solid #1e6bff;
+    box-shadow: 0 6px 14px -6px rgba(10, 31, 68, 0.55);
+    cursor: grab;
+  }
+
+  .range-brand::-moz-range-track {
+    background: transparent;
+  }
+
+  .range-brand:focus-visible {
+    box-shadow: 0 0 0 4px rgba(30, 107, 255, 0.16);
+  }
+}
+
+@keyframes rita-kenburns {
+  from {
+    transform: scale(1.02) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.14) translate3d(-1%, -1.5%, 0);
+  }
+}
+
+@keyframes rita-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rita-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rita-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-kenburns {
+  animation: rita-kenburns 18s ease-out forwards;
+}
+
+.animate-enter {
+  animation: rita-fade-up 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-enter-slow {
+  animation: rita-fade-up 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-fade {
+  animation: rita-fade-in 0.5s ease-out both;
+}
+
+.animate-compass {
+  animation: rita-spin 1.4s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-kenburns,
+  .animate-enter,
+  .animate-enter-slow,
+  .animate-fade,
+  .animate-compass {
+    animation: none !important;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}

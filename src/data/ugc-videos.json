@@ -1,0 +1,41 @@
+{
+  "note": "Sample video placeholders. No real customers are shown. Replace each card with a genuine guest clip (name, destination, caption, video URL) once consent is collected.",
+  "items": [
+    {
+      "id": "ugc-one",
+      "poster": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/0a6e2169d_generated_aef3293f.png",
+      "name": "Sample traveller",
+      "destination": "Rome, Italy",
+      "caption": "Sample placeholder — guest clip coming soon.",
+      "videoUrl": null,
+      "isSample": true
+    },
+    {
+      "id": "ugc-two",
+      "poster": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/0824a11b9_generated_05c4c82f.png",
+      "name": "Sample traveller",
+      "destination": "Swiss Alps",
+      "caption": "Sample placeholder — guest clip coming soon.",
+      "videoUrl": null,
+      "isSample": true
+    },
+    {
+      "id": "ugc-three",
+      "poster": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/607009a09_generated_55e74fcf.png",
+      "name": "Sample traveller",
+      "destination": "Aegean Islands",
+      "caption": "Sample placeholder — guest clip coming soon.",
+      "videoUrl": null,
+      "isSample": true
+    },
+    {
+      "id": "ugc-four",
+      "poster": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/70dea4cb9_generated_81a251a5.png",
+      "name": "Sample traveller",
+      "destination": "Paris, France",
+      "caption": "Sample placeholder — guest clip coming soon.",
+      "videoUrl": null,
+      "isSample": true
+    }
+  ]
+}

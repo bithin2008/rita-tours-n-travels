@@ -1,0 +1,87 @@
+{
+  "name": "Lead",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "newsletter",
+        "enquiry"
+      ],
+      "description": "Where the submission came from",
+      "enumColors": [
+        "blue",
+        "purple"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "description": "Name given by the visitor"
+    },
+    "email": {
+      "type": "string",
+      "description": "Contact email for a reply"
+    },
+    "message": {
+      "type": "string",
+      "description": "Message or enquiry detail"
+    },
+    "tour_id": {
+      "type": "string",
+      "description": "Tour the enquiry refers to"
+    },
+    "tour_title": {
+      "type": "string",
+      "description": "Human readable tour title"
+    },
+    "language": {
+      "type": "string",
+      "description": "Language the visitor was browsing in"
+    },
+    "currency": {
+      "type": "string",
+      "description": "Currency the visitor was browsing in"
+    },
+    "consent": {
+      "type": "boolean",
+      "description": "Visitor agreed to be contacted"
+    },
+    "source": {
+      "type": "string",
+      "description": "Section of the site that produced the lead"
+    },
+    "topic": {
+      "type": "string",
+      "description": "Reason picked in the contact form"
+    }
+  },
+  "required": [
+    "type",
+    "email"
+  ],
+  "rls": {
+    "create": {},
+    "read": {
+      "$or": [
+        {
+          "created_by_id": "{{user.id}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

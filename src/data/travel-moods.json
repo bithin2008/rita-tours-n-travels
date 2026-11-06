@@ -1,0 +1,53 @@
+{
+  "items": [
+    {
+      "id": "adventure",
+      "title": "Adventure",
+      "description": "Ridges, trails and early starts.",
+      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/ef859f1c6_generated_019b2ed5.png",
+      "tourIds": ["dolomites", "swiss-alps"]
+    },
+    {
+      "id": "romantic",
+      "title": "Romantic Escape",
+      "description": "Two seats, one view, no rush.",
+      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/638e2fb77_generated_4400c795.png",
+      "tourIds": ["santorini", "lake-como"]
+    },
+    {
+      "id": "luxury",
+      "title": "Luxury Retreat",
+      "description": "Quiet rooms and long lunches.",
+      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/81c3b142b_generated_5ab9c03c.png",
+      "tourIds": ["lake-como", "amalfi-coast"]
+    },
+    {
+      "id": "family",
+      "title": "Family Holiday",
+      "description": "Days everyone can keep up with.",
+      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/ff108b642_generated_d5b483e2.png",
+      "tourIds": ["swiss-alps", "paris"]
+    },
+    {
+      "id": "culture",
+      "title": "Culture & Heritage",
+      "description": "Museums, cloisters, old streets.",
+      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/1e57875ea_generated_5fd7b377.png",
+      "tourIds": ["paris", "lake-como"]
+    },
+    {
+      "id": "nature",
+      "title": "Nature & Wildlife",
+      "description": "Forest paths and open water.",
+      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/7217b0d4d_generated_71f09657.png",
+      "tourIds": ["swiss-alps", "dolomites"]
+    },
+    {
+      "id": "beach",
+      "title": "Beach & Relaxation",
+      "description": "Salt water and nothing urgent.",
+      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/7f985de62_generated_9c925291.png",
+      "tourIds": ["santorini", "amalfi-coast"]
+    }
+  ]
+}

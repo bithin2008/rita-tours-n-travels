@@ -1,0 +1,82 @@
+{
+  "name": "JobOpening",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Role title, e.g. Journey Designer"
+    },
+    "department": {
+      "type": "string",
+      "description": "Team the role sits in"
+    },
+    "location": {
+      "type": "string",
+      "description": "City or remote arrangement"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "full_time",
+        "part_time",
+        "contract",
+        "internship"
+      ],
+      "enumColors": [
+        "green",
+        "blue",
+        "purple",
+        "yellow"
+      ],
+      "default": "full_time"
+    },
+    "summary": {
+      "type": "string",
+      "description": "One or two lines on the role"
+    },
+    "responsibilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "What the person will own"
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "What we look for"
+    },
+    "posted_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "published": {
+      "type": "boolean",
+      "default": true,
+      "description": "Uncheck to hide the role from the careers page"
+    }
+  },
+  "required": [
+    "title"
+  ],
+  "rls": {
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "read": {},
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

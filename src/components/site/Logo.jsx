@@ -1,0 +1,33 @@
+import { Link } from "@tanstack/react-router";
+import { cn } from "@/lib/utils";
+
+const RITA_LOGO_URL =
+  "https://base44.app/api/apps/6aec6c41ac98455faf00216e/files/mp/public/6aec6c41ac98455faf00216e/4e0d73c7c_rita-logo.png";
+
+/**
+ * Official RITA Tours N Travels logo lockup (bird + compass mark with the
+ * RITA wordmark), linking home. The artwork sits on its own cream field, so it
+ * is presented as a softly rounded badge that reads on light and dark surfaces.
+ */
+export default function Logo({ light = false, className }) {
+  return (
+    <Link
+      to="/"
+      aria-label="RITA Tours N Travels — home"
+      className={cn("group inline-flex shrink-0 items-center", className)}
+    >
+      <img
+        src={RITA_LOGO_URL}
+        alt="RITA Tours N Travels"
+        width="112"
+        height="112"
+        className={cn(
+          "h-12 w-auto rounded-lg object-contain transition-transform duration-500 group-hover:scale-[1.04] sm:h-14",
+          light
+            ? "shadow-[0_14px_30px_-16px_rgba(0,0,0,0.65)]"
+            : "shadow-[0_10px_24px_-18px_rgba(10,31,68,0.5)]",
+        )}
+      />
+    </Link>
+  );
+}

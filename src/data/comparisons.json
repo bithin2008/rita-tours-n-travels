@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "id": "santorini-day-night",
+      "destination": "Santorini, Greece",
+      "title": "One island, two lights",
+      "caption": "The same Oia terrace at midday and at sunset — the view barely changes, the feeling does entirely.",
+      "beforeImage": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/0b4c40c55_generated_38b87e4d.png",
+      "afterImage": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/8fb2316a5_generated_5c554557.png",
+      "beforeLabel": "Midday",
+      "afterLabel": "Sunset"
+    },
+    {
+      "id": "alps-summer-winter",
+      "destination": "Swiss Alps, Switzerland",
+      "title": "One valley, two seasons",
+      "caption": "The same path above the valley in summer meadow green and under fresh winter snow.",
+      "beforeImage": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/44764f28f_generated_0eba3e82.png",
+      "afterImage": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/40aaee819_generated_039f3cf4.png",
+      "beforeLabel": "Summer",
+      "afterLabel": "Winter"
+    },
+    {
+      "id": "amalfi-morning-evening",
+      "destination": "Positano, Italy",
+      "title": "One terrace, two hours",
+      "caption": "Morning calm and evening lamps over the same stretch of Amalfi coastline.",
+      "beforeImage": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/200677d2d_generated_41291e87.png",
+      "afterImage": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/3bfd68f49_generated_5f9b5bc7.png",
+      "beforeLabel": "Morning",
+      "afterLabel": "Evening"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "note": "Sample placeholders. Replace each entry with a real guest photo, caption and destination before launch.",
+  "items": [
+    {
+      "id": "story-one",
+      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/d018704d1_generated_888ad27f.png",
+      "caption": "Sample story — a scooter parked in a hill town, half a day with nowhere to be.",
+      "destination": "Italy",
+      "isSample": true
+    },
+    {
+      "id": "story-two",
+      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/8034fdda5_generated_2bea83b4.png",
+      "caption": "Sample story — the train window view that made us cancel the afternoon plan.",
+      "destination": "Switzerland",
+      "isSample": true
+    },
+    {
+      "id": "story-three",
+      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/7e5b73ca2_generated_d5efd14d.png",
+      "caption": "Sample story — lunch that turned into three hours by the water.",
+      "destination": "Greece",
+      "isSample": true
+    },
+    {
+      "id": "story-four",
+      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/d280cf80c_generated_23ace902.png",
+      "caption": "Sample story — the mountain hut where the lights came on at dusk.",
+      "destination": "Dolomites",
+      "isSample": true
+    },
+    {
+      "id": "story-five",
+      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/44248f1b3_generated_7961d6b9.png",
+      "caption": "Sample story — a tram ride up a street that smelled of warm stone.",
+      "destination": "Portugal",
+      "isSample": true
+    },
+    {
+      "id": "story-six",
+      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/25a3a8cb1_generated_6cd92d68.png",
+      "caption": "Sample story — up before sunrise, worth every minute of the alarm.",
+      "destination": "Austria",
+      "isSample": true
+    }
+  ]
+}
