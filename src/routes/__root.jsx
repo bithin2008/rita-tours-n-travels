@@ -23,7 +23,7 @@ export const Route = createRootRoute({
       {
         rel: "icon",
         type: "image/png",
-        href: "https://base44.app/api/apps/6aec6c41ac98455faf00216e/files/mp/public/6aec6c41ac98455faf00216e/4e0d73c7c_rita-logo.png",
+        href: "https://base44.app/api/apps/6aec6c41ac98455faf00216e/files/mp/public/6aec6c41ac98455faf00216e/d952b67e9_rita-logo-final.jpg",
       },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },

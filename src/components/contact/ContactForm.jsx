@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useServerFn } from "@tanstack/react-start";
 import { CheckCircle2, Loader2, Send } from "lucide-react";
 import { Field, SelectInput, TextArea, TextInput } from "@/components/planning/FormBits";
 import { createLead, isValidEmail } from "@/lib/leads";
+import { sendContactEmails } from "@/lib/server-fns";
 import { useApp } from "@/lib/AppContext";
 import { cn } from "@/lib/utils";
 
@@ -17,6 +19,7 @@ const EMPTY = { name: "", email: "", topic: TOPICS[0], message: "", consent: fal
 
 export default function ContactForm() {
   const { language, currency } = useApp();
+  const sendEmails = useServerFn(sendContactEmails);
   const [form, setForm] = useState(EMPTY);
   const [status, setStatus] = useState("idle");
   const [error, setError] = useState("");
@@ -49,6 +52,19 @@ export default function ContactForm() {
         language,
         currency,
       });
+
+      // Email is best effort — a delivery problem never loses the enquiry.
+      await sendEmails({
+        data: {
+          name: form.name.trim(),
+          email: form.email.trim(),
+          topic: form.topic,
+          message: form.message.trim(),
+          language,
+          currency,
+        },
+      }).catch(() => {});
+
       setForm(EMPTY);
       setStatus("idle");
       setSent(true);

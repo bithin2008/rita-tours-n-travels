@@ -1,0 +1,124 @@
+{
+  "title": "Privacy Policy",
+  "intro": "This notice explains what personal data RITA Tours N Travels collects when you browse our website, send an enquiry or travel with us, and how we look after that data under the EU General Data Protection Regulation (GDPR).",
+  "updated": "11 November 2026",
+  "sections": [
+    {
+      "id": "who-we-are",
+      "heading": "Who we are",
+      "paragraphs": [
+        "RITA Tours N Travels is a travel company registered in the Netherlands, with its office at Keizersgracht 100, Amsterdam. We are the data controller for the personal data described in this notice.",
+        "For any question about this notice or your data, write to hello@ritatoursandtravels.eu or call +31 20 000 0000."
+      ]
+    },
+    {
+      "id": "data-we-collect",
+      "heading": "The data we collect",
+      "paragraphs": [
+        "We only collect what we need to answer your enquiry, plan and deliver your trip, and keep our service running. Depending on how you use the site, this can include:"
+      ],
+      "bullets": [
+        "Enquiry details you send us: your name, email address, phone number, travel dates, destinations, party size, preferences and any message you write.",
+        "Booking details: traveller names, dates of birth where a supplier requires them, passport details needed for flights, dietary and accessibility requirements, and emergency contact information.",
+        "Payment information: invoices and payment status. Card details are entered directly with our payment provider and are never stored on our systems.",
+        "Technical data: IP address, browser and device type, language and currency preferences, and the pages you visit.",
+        "Communications: emails, messages and notes from calls with our team."
+      ]
+    },
+    {
+      "id": "how-we-use-your-data",
+      "heading": "How we use your data",
+      "paragraphs": ["We use personal data for the following purposes:"],
+      "bullets": [
+        "To reply to your enquiry and prepare a tailored proposal or itinerary.",
+        "To confirm and manage your booking with airlines, hotels, guides and ground transport partners.",
+        "To take payments, issue invoices and keep the accounting records the law requires.",
+        "To send you service messages about your trip, and occasional journey inspiration if you have asked for it.",
+        "To improve our website, understand which journeys interest visitors and prevent fraud or misuse.",
+        "To meet legal, tax and insurance obligations, or to establish and defend legal claims."
+      ]
+    },
+    {
+      "id": "legal-bases",
+      "heading": "Our legal bases",
+      "paragraphs": [
+        "Under the GDPR we rely on four legal bases, depending on the activity:",
+        "Contract. Most of what we do with booking data is necessary to perform our contract with you.",
+        "Legitimate interests. We use enquiry and technical data to run and improve our business in ways that do not override your rights — for example replying to your enquiry and securing the site.",
+        "Consent. We send marketing emails and set optional analytics or marketing cookies only with your consent, which you can withdraw at any time.",
+        "Legal obligation. We keep invoices and travel records for the periods required by Dutch law."
+      ]
+    },
+    {
+      "id": "who-we-share-with",
+      "heading": "Who we share data with",
+      "paragraphs": [
+        "To deliver a trip, we must share the details each supplier needs — for example a hotel, airline, transfer company or licensed guide. We share the minimum required and only for the purpose of your journey.",
+        "We also use service providers who process data on our behalf: our email and hosting providers, payment processors, our accountant and legal advisers, and insurers. They act on our instructions under written agreements.",
+        "We may disclose data where we are legally required to do so, or to protect our rights, safety or property.",
+        "We never sell personal data, and we do not share it for third-party advertising."
+      ]
+    },
+    {
+      "id": "cookies",
+      "heading": "Cookies and similar technologies",
+      "paragraphs": [
+        "We use a small number of cookies and browser storage entries. Essential ones keep the site working and remember the choices you make, such as your language, currency and cookie preference. Optional analytics and marketing cookies are set only if you accept them in the consent banner.",
+        "You can change your mind at any time by clearing the site's stored choice in your browser settings, after which the banner will ask you again. Blocking essential cookies may prevent parts of the site from working."
+      ]
+    },
+    {
+      "id": "retention",
+      "heading": "How long we keep data",
+      "paragraphs": [
+        "Enquiries that do not become bookings are kept for up to 24 months so we can pick up the conversation where you left it. Booking and invoice records are kept for seven years to meet Dutch tax and accounting rules. Newsletter subscribers stay on our list until they unsubscribe.",
+        "When a retention period ends, records are deleted or irreversibly anonymised."
+      ]
+    },
+    {
+      "id": "your-rights",
+      "heading": "Your rights",
+      "paragraphs": [
+        "You have the right to access your personal data, to correct it, to have it deleted, to restrict or object to how we use it, and to receive a copy in a portable format. Where we rely on consent, you can withdraw it at any time without affecting earlier processing.",
+        "Write to hello@ritatoursandtravels.eu and we will respond within one month. We may ask for proof of identity before acting so that we never release data to the wrong person.",
+        "If you are not satisfied with our answer, you can complain to the Dutch data protection authority, the Autoriteit Persoonsgegevens."
+      ]
+    },
+    {
+      "id": "security",
+      "heading": "How we protect data",
+      "paragraphs": [
+        "Data is encrypted in transit, access is limited to the people who need it for their work, and our providers are bound by confidentiality and data processing agreements. Payment details never touch our systems.",
+        "No method of transmission or storage is completely secure, but we review our practices regularly and notify you and the authorities if a breach is likely to put your rights at risk."
+      ]
+    },
+    {
+      "id": "transfers",
+      "heading": "International transfers",
+      "paragraphs": [
+        "Your data is normally processed inside the European Economic Area. Some suppliers, such as an airline outside the EEA or a software provider, may process data elsewhere. In that case we rely on the European Commission's standard contractual clauses and, where relevant, additional measures to keep protection equivalent to EU law."
+      ]
+    },
+    {
+      "id": "children",
+      "heading": "Children",
+      "paragraphs": [
+        "Our website is intended for adults and is not directed at children under 16, so we do not knowingly collect their data online. When a child travels on a family journey, their details are provided by the accompanying adult and used only to arrange the trip."
+      ]
+    },
+    {
+      "id": "changes",
+      "heading": "Changes to this notice",
+      "paragraphs": [
+        "We update this notice when our services or the law change. The date at the top always shows the current version. If a change materially affects how we use your data, we will tell you by email or with a notice on this site before it takes effect."
+      ]
+    },
+    {
+      "id": "contact",
+      "heading": "Contact us",
+      "paragraphs": [
+        "RITA Tours N Travels, Keizersgracht 100, Amsterdam, Netherlands. Email hello@ritatoursandtravels.eu, phone +31 20 000 0000. We reply within one business day."
+      ]
+    }
+  ]
+}

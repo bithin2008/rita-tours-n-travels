@@ -3,14 +3,14 @@ import { ArrowRight, ChevronLeft, ChevronRight, MapPin } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import SearchCard from "@/components/home/SearchCard";
 import useReducedMotion from "@/hooks/useReducedMotion";
-import { getTourList } from "@/lib/data-service";
+import { formatPrice, getTourList } from "@/lib/data-service";
 import { useApp } from "@/lib/AppContext";
 import { cn } from "@/lib/utils";
 
 const AUTOPLAY_MS = 5000;
 
 export default function Hero({ onSearch, onOpenTour }) {
-  const { t } = useApp();
+  const { t, currency } = useApp();
   const slides = getTourList();
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
@@ -130,7 +130,7 @@ export default function Hero({ onSearch, onOpenTour }) {
               <div className="h-8 w-px bg-white/20" aria-hidden="true" />
               <div>
                 <dt className="text-[10px] uppercase tracking-[0.18em] text-white/50">{t("label.from")}</dt>
-                <dd className="mt-0.5 text-sm font-medium">€{slide.priceFrom.toLocaleString("en-US")}</dd>
+                <dd className="mt-0.5 text-sm font-medium">{formatPrice(slide.priceFrom, currency)}</dd>
               </div>
             </dl>
           </div>
