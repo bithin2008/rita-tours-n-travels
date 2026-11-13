@@ -1,4 +1,5 @@
-import { Link } from "@tanstack/react-router";
+"use client";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 const RITA_LOGO_URL =
@@ -13,7 +14,7 @@ const RITA_LOGO_URL =
 export default function Logo({ light = false, className }) {
   return (
     <Link
-      to="/"
+      href="/"
       aria-label="RITA Tours N Travels — home"
       className={cn("group inline-flex shrink-0 items-center", className)}
     >

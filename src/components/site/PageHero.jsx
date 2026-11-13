@@ -1,14 +1,10 @@
+"use client";
 import { useEffect, useRef } from "react";
-import { Link } from "@tanstack/react-router";
+import Link from "next/link";
 import { Image } from "@/components/ui/image";
 import useReducedMotion from "@/hooks/useReducedMotion";
 import { loadGsap } from "@/lib/gsap-loader";
 
-/**
- * Shared hero for interior pages: breadcrumb, headline and an optional slot
- * for page-specific content (stats, controls) over a dimmed photograph.
- * The copy lines lift into place on arrival with GSAP.
- */
 export default function PageHero({ eyebrow, title, subtitle, image, imageAlt = "", children }) {
   const contentRef = useRef(null);
   const reduced = useReducedMotion();
@@ -63,7 +59,7 @@ export default function PageHero({ eyebrow, title, subtitle, image, imageAlt = "
       />
       <div ref={contentRef} className="shell relative z-10 pb-14 pt-32 sm:pt-36 lg:pb-20 lg:pt-40">
         <nav aria-label="Breadcrumb" className="text-[11px] font-semibold uppercase tracking-[0.18em] text-white/45">
-          <Link to="/" className="transition-colors hover:text-white">
+          <Link href="/" className="transition-colors hover:text-white">
             Home
           </Link>
           <span aria-hidden="true" className="px-2 text-white/25">

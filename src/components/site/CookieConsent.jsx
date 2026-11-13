@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 import { Cookie } from "lucide-react";
 import { Switch } from "@/components/ui/switch";

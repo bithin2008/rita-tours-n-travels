@@ -1,3 +1,4 @@
+"use client";
 import { Clock, Facebook, Instagram, Linkedin, Mail, MapPin, MessageCircle, Phone, Siren, Youtube } from "lucide-react";
 import { useApp } from "@/lib/AppContext";
 
@@ -11,9 +12,8 @@ function InfoRow({ icon: Icon, label, value, href, tone = "electric" }) {
       className="group flex items-start gap-3.5 rounded-2xl border border-navy/10 bg-white p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-electric/35 hover:shadow-[0_20px_40px_-32px_rgba(10,31,68,0.55)]"
     >
       <span
-        className={`grid h-10 w-10 shrink-0 place-items-center rounded-xl ${
-          tone === "coral" ? "bg-coral/10 text-[#d8431f]" : "bg-electric/10 text-electric"
-        }`}
+        className={`grid h-10 w-10 shrink-0 place-items-center rounded-xl ${tone === "coral" ? "bg-coral/10 text-[#d8431f]" : "bg-electric/10 text-electric"
+          }`}
       >
         <Icon className="h-[18px] w-[18px]" aria-hidden="true" />
       </span>

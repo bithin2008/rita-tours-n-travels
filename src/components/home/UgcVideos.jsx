@@ -1,6 +1,7 @@
+"use client";
 import { useState } from "react";
 import { ArrowRight, Play, X } from "lucide-react";
-import { Link } from "@tanstack/react-router";
+import Link from "next/link";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import { Image } from "@/components/ui/image";
 import SectionHeading from "@/components/site/SectionHeading";
@@ -24,7 +25,7 @@ export default function UgcVideos() {
             light
           />
           <Link
-            to="/testimonials"
+            href="/testimonials"
             className="group inline-flex w-fit items-center gap-2 rounded-full border border-white/25 px-5 py-2.5 text-[13px] font-semibold text-white transition-colors hover:border-mint hover:text-mint"
           >
             {t("cta.shareStory")}

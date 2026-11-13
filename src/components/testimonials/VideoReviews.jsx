@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { Play, X } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";

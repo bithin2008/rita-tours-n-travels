@@ -1,12 +1,13 @@
+"use client";
 import { useEffect, useLayoutEffect, useState } from "react";
-import { Link, useNavigate, useRouterState } from "@tanstack/react-router";
+import Link from "next/link";
+import { useRouter, usePathname } from "next/navigation";
 import { ChevronDown, Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import Logo from "@/components/site/Logo";
 import { useApp } from "@/lib/AppContext";
 import { cn } from "@/lib/utils";
 
-// Runs before paint on the client, plain effect on the server.
 const useIsomorphicLayoutEffect = typeof window !== "undefined" ? useLayoutEffect : useEffect;
 
 function isPathActive(pathname, to) {
@@ -47,8 +48,8 @@ export default function SiteHeader() {
   const { settings, language, setLanguage, currency, setCurrency, t } = useApp();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const pathname = useRouterState({ select: (state) => state.location.pathname });
-  const navigate = useNavigate();
+  const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -56,7 +57,6 @@ export default function SiteHeader() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Re-sync before paint on navigation — the page has already been scrolled to the top.
   useIsomorphicLayoutEffect(() => {
     setScrolled(window.scrollY > 60);
   }, [pathname]);
@@ -67,7 +67,7 @@ export default function SiteHeader() {
   const scrollToPlanner = () => {
     setOpen(false);
     if (pathname !== "/") {
-      navigate({ to: "/" });
+      router.push("/");
       window.setTimeout(() => {
         document.getElementById("search-panel")?.scrollIntoView({ behavior: "smooth", block: "center" });
       }, 350);
@@ -97,7 +97,7 @@ export default function SiteHeader() {
             return (
               <Link
                 key={item.to}
-                to={item.to}
+                href={item.to}
                 aria-current={active ? "page" : undefined}
                 className={cn(
                   "relative whitespace-nowrap py-1 text-[13.5px] transition-colors duration-300",
@@ -178,7 +178,7 @@ export default function SiteHeader() {
                     return (
                       <Link
                         key={item.to}
-                        to={item.to}
+                        href={item.to}
                         onClick={() => setOpen(false)}
                         aria-current={active ? "page" : undefined}
                         className={cn(

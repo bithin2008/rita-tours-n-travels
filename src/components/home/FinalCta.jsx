@@ -1,4 +1,5 @@
-import { Link } from "@tanstack/react-router";
+"use client";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import { getTourById } from "@/lib/data-service";
@@ -30,14 +31,14 @@ export default function FinalCta() {
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
-              to="/tours"
+              href="/tours"
               className="group inline-flex h-12 items-center justify-center gap-2 rounded-full bg-coral px-6 text-sm font-semibold text-white transition-all duration-300 hover:bg-[#f04d2c] hover:shadow-[0_18px_36px_-16px_rgba(255,92,58,0.8)]"
             >
               {t("cta.exploreTours")}
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true" />
             </Link>
             <Link
-              to="/tour-planning"
+              href="/tour-planning"
               className="inline-flex h-12 items-center justify-center rounded-full border border-white/45 px-6 text-sm font-semibold text-white transition-colors duration-300 hover:bg-white hover:text-navy"
             >
               {t("cta.planJourney")}

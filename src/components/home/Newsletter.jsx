@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { ArrowRight, Check, Loader2, Mail } from "lucide-react";
 import { Checkbox } from "@/components/ui/checkbox";

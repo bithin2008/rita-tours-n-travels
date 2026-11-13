@@ -1,4 +1,5 @@
-import { Link } from "@tanstack/react-router";
+"use client";
+import Link from "next/link";
 import { CalendarCheck, Mail, MessageSquare, PartyPopper } from "lucide-react";
 
 export default function PlanningSuccess({ recap, reference, contact }) {
@@ -42,7 +43,7 @@ export default function PlanningSuccess({ recap, reference, contact }) {
 
       <div className="mt-7 flex flex-col justify-center gap-3 sm:flex-row">
         <Link
-          to="/tours"
+          href="/tours"
           className="inline-flex h-11 items-center justify-center rounded-full bg-navy px-5 text-[13px] font-semibold text-white transition-colors hover:bg-electric"
         >
           Browse journeys meanwhile

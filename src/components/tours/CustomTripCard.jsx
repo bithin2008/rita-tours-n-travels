@@ -1,4 +1,5 @@
-import { Link } from "@tanstack/react-router";
+"use client";
+import Link from "next/link";
 import { ArrowRight, Sparkles } from "lucide-react";
 
 export default function CustomTripCard() {
@@ -13,7 +14,7 @@ export default function CustomTripCard() {
         build something around them.
       </p>
       <Link
-        to="/tour-planning"
+        href="/tour-planning"
         className="group mt-4 inline-flex items-center gap-2 rounded-full bg-electric px-4 py-2 text-[12px] font-semibold text-white transition-colors hover:bg-[#1560f0]"
       >
         Plan a custom trip

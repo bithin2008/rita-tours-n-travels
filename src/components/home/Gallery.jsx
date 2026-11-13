@@ -1,3 +1,4 @@
+"use client";
 import { Instagram } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import SectionHeading from "@/components/site/SectionHeading";

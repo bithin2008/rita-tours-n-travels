@@ -1,5 +1,6 @@
+"use client";
 import { ArrowRight } from "lucide-react";
-import { Link } from "@tanstack/react-router";
+import Link from "next/link";
 import { getTestimonials } from "@/lib/data-service";
 
 export default function TestimonialsCta() {
@@ -26,14 +27,14 @@ export default function TestimonialsCta() {
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link
-                to="/tour-planning"
+                href="/tour-planning"
                 className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-full bg-electric px-7 text-[13px] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#1560f0] sm:w-auto"
               >
                 Plan my journey
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
               <Link
-                to="/tours"
+                href="/tours"
                 className="inline-flex h-12 w-full items-center justify-center rounded-full border border-white/25 px-7 text-[13px] font-semibold text-white transition-colors hover:border-mint hover:text-mint sm:w-auto"
               >
                 Browse journeys

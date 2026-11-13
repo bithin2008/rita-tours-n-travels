@@ -1,4 +1,5 @@
-import { Link } from "@tanstack/react-router";
+"use client";
+import Link from "next/link";
 import { ArrowRight, Camera } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import SectionHeading from "@/components/site/SectionHeading";
@@ -19,7 +20,7 @@ export default function PhotoStories() {
             subtitle={t("section.storiesSub")}
           />
           <Link
-            to="/testimonials"
+            href="/testimonials"
             className="group inline-flex w-fit items-center gap-2 rounded-full border border-navy/15 bg-white px-5 py-2.5 text-[13px] font-semibold text-navy transition-colors hover:border-electric hover:text-electric"
           >
             {t("cta.viewAllStories")}
@@ -31,7 +32,7 @@ export default function PhotoStories() {
           {items.map((story) => (
             <Link
               key={story.id}
-              to="/testimonials"
+              href="/testimonials"
               className="group relative block break-inside-avoid overflow-hidden rounded-[20px] bg-navy"
             >
               <Image

@@ -1,4 +1,5 @@
-import { Link } from "@tanstack/react-router";
+"use client";
+import Link from "next/link";
 import { ArrowRight, Compass, Headset, Leaf, MapPinned, Sparkles } from "lucide-react";
 import SectionHeading from "@/components/site/SectionHeading";
 import { useApp } from "@/lib/AppContext";
@@ -40,7 +41,7 @@ export default function WhyRita() {
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeading eyebrow="07 — Why RITA" title={t("section.why")} subtitle={t("section.whySub")} />
           <Link
-            to="/about"
+            href="/about"
             className="group inline-flex w-fit shrink-0 items-center gap-2 rounded-full border border-navy/15 px-5 py-2.5 text-[13px] font-semibold text-navy transition-colors hover:border-electric hover:text-electric"
           >
             Our story & team

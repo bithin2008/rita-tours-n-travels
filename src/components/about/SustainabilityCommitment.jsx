@@ -1,4 +1,5 @@
-import { Link } from "@tanstack/react-router";
+"use client";
+import Link from "next/link";
 import { ArrowRight, Leaf } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import { useApp } from "@/lib/AppContext";
@@ -45,7 +46,7 @@ export default function SustainabilityCommitment({ sustainability }) {
         <div className="mt-9 flex flex-col gap-5 border-t border-white/12 pt-7 sm:flex-row sm:items-center sm:justify-between">
           <p className="max-w-2xl text-[12.5px] leading-relaxed text-white/45">{sustainability.note}</p>
           <Link
-            to="/tour-planning"
+            href="/tour-planning"
             className="group inline-flex w-fit shrink-0 items-center gap-2 rounded-full bg-white px-5 py-2.5 text-[13px] font-semibold text-navy transition-colors hover:bg-mint"
           >
             <Leaf className="h-4 w-4 text-mint transition-colors group-hover:text-navy" aria-hidden="true" />

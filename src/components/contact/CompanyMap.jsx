@@ -1,3 +1,4 @@
+"use client";
 import { useApp } from "@/lib/AppContext";
 
 export default function CompanyMap() {

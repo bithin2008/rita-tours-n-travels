@@ -1,3 +1,4 @@
+"use client";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowRight, ChevronLeft, ChevronRight, MapPin } from "lucide-react";
 import { Image } from "@/components/ui/image";

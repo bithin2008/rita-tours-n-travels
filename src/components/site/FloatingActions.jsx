@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 import { ArrowUp, MessageCircle } from "lucide-react";
 import { useApp } from "@/lib/AppContext";

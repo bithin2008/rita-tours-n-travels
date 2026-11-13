@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { Info, Leaf, TrainFront, TreePine } from "lucide-react";
 import { Switch } from "@/components/ui/switch";

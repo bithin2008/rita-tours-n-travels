@@ -1,3 +1,4 @@
+"use client";
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
 import { getSiteSettings, translate } from "@/lib/data-service";
 

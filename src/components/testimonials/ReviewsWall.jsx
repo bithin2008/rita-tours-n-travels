@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { BadgeCheck } from "lucide-react";
 import SectionHeading from "@/components/site/SectionHeading";

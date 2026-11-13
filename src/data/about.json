@@ -1,15 +1,27 @@
 {
   "hero": {
     "eyebrow": "About us",
-    "title": "We plan Europe the way we would travel it ourselves.",
-    "subtitle": "RITA Tours N Travels is a small, EU-based travel studio in Amsterdam. We build personalised journeys across Italy, Greece, France, Switzerland, Austria and Spain — with fewer stops, longer stays and a real person behind every itinerary.",
+    "title": "We explore the heart of Europe, one day at a time.",
+    "subtitle": "RITA Tours &amp; Travels is an EU-registered travel studio based in the Netherlands. We craft immersive day journeys—starting right here in the Dutch and Benelux regions—connecting you with authentic food, deep local history, and a real person behind every itinerary.",
     "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/bf1b14139_generated_defda7f7.png",
     "imageAlt": "Lakeside villas and mountains on Lake Como at golden hour",
     "stats": [
-      { "value": "2014", "label": "Planning since" },
-      { "value": "6", "label": "Countries in depth" },
-      { "value": "9", "label": "Planners & guides" },
-      { "value": "96%", "label": "Would travel again" }
+      {
+        "value": "2026",
+        "label": "ESTABLISHED IN THE NETHERLANDS"
+      },
+      {
+        "value": "50",
+        "label": "MAXIMUM GUESTS PER TOUR"
+      },
+      {
+        "value": "100%",
+        "label": "LOCALLY CRAFTED EXPERIENCES"
+      },
+      {
+        "value": "EU",
+        "label": "PROTECTED TRAVEL STANDARDS"
+      }
     ]
   },
   "story": {

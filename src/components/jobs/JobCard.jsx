@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { ArrowRight, Briefcase, ChevronDown, MapPin } from "lucide-react";
 import { cn } from "@/lib/utils";

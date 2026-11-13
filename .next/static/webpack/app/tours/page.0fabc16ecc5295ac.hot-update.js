@@ -1,0 +1,22 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/tours/page",{
+
+/***/ "(app-pages-browser)/./src/data/site-settings.json":
+/*!*************************************!*\
+  !*** ./src/data/site-settings.json ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = /*#__PURE__*/JSON.parse('{"brand":{"name":"RITA Tours N Travels","shortName":"RITA","tagline":"Thoughtfully planned journeys across Europe","description":"An EU-based travel company crafting personalised European journeys — from Amalfi terraces and Alpine trails to Aegean islands — with real people planning every detail.","email":"Info.ritatravel@gmail.com","phone":"+31 62 647 6854","whatsapp":"31626476854","addressLine":"Zwanebloem 6, 3453 VR Utrecht, Netherlands","responseTime":"We reply within one business day"},"seo":{"title":"RITA Tours N Travels — Personalised European Journeys","description":"Hand-planned tours across Italy, Switzerland, France, Greece, Austria and Spain. Compare journeys, explore destinations by mood, and plan your trip with RITA Tours N Travels.","keywords":"European tours, Italy tours, Alps travel, Santorini holidays, custom travel planning, sustainable travel Europe"},"navigation":[{"label":"Home","labelKey":"nav.home","to":"/"},{"label":"About Us","labelKey":"nav.about","to":"/about"},{"label":"Tours","labelKey":"nav.tours","to":"/tours"},{"label":"Tour Planning","labelKey":"nav.planning","to":"/tour-planning"},{"label":"Testimonials","labelKey":"nav.testimonials","to":"/testimonials"},{"label":"Jobs","labelKey":"nav.jobs","to":"/jobs"},{"label":"FAQs","labelKey":"nav.faqs","to":"/faqs"},{"label":"Contact","labelKey":"nav.contact","to":"/contact"}],"legalLinks":[{"label":"Privacy Policy","to":"/privacy-policy"},{"label":"Terms and Conditions","to":"/terms"}],"social":[{"label":"Instagram","icon":"instagram","href":"https://www.instagram.com/"},{"label":"Facebook","icon":"facebook","href":"https://www.facebook.com/"},{"label":"YouTube","icon":"youtube","href":"https://www.youtube.com/"},{"label":"LinkedIn","icon":"linkedin","href":"https://www.linkedin.com/"}],"currencies":[{"code":"EUR","symbol":"€","rate":1,"label":"Euro"},{"code":"USD","symbol":"$","rate":1.09,"label":"US Dollar"},{"code":"GBP","symbol":"£","rate":0.85,"label":"Pound Sterling"}],"currencyNote":"Indicative conversion rates — final prices are quoted in EUR.","languages":[{"code":"en","label":"English","short":"EN"},{"code":"fr","label":"Français","short":"FR"},{"code":"de","label":"Deutsch","short":"DE"},{"code":"es","label":"Español","short":"ES"}],"sustainability":{"contributionEur":12,"note":"Carbon figures are a rough estimate based on tour length, transport type and group size. They are not a verified offset, and no certified carbon credits are sold.","greenContributionNote":"Optional €12 contribution towards slower transport, local conservation partners and low-impact accommodation on your trip."},"imageCredits":"All photography on this page is original licensed imagery produced for RITA Tours N Travels. Replace with your own shoot or licensed gallery before launch.","placeholderNote":"Sample placeholder content — swap for real guest submissions before launch."}');
+
+/***/ })
+
+});

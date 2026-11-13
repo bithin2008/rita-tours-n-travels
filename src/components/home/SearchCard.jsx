@@ -1,3 +1,4 @@
+"use client";
 import { useMemo, useState } from "react";
 import { format } from "date-fns";
 import { CalendarDays, MapPin, Minus, Plus, Search, Users } from "lucide-react";

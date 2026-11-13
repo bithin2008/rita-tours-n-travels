@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { ArrowRight, Heart } from "lucide-react";
 import { Image } from "@/components/ui/image";

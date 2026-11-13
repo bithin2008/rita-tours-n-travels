@@ -1,4 +1,5 @@
-import { Link } from "@tanstack/react-router";
+"use client";
+import Link from "next/link";
 import { ArrowRight, Clock, Mail, Phone } from "lucide-react";
 
 const steps = [
@@ -48,7 +49,7 @@ export default function PlanningAside({ brand }) {
           </p>
         </div>
         <Link
-          to="/tours"
+          href="/tours"
           className="group mt-4 inline-flex items-center gap-1.5 text-[12px] font-semibold text-mint transition-colors hover:text-white"
         >
           Browse ready-made journeys

@@ -1,3 +1,4 @@
+"use client";
 import { ArrowRight, Clock, Heart, Leaf, MapPin, Users } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import { useApp } from "@/lib/AppContext";

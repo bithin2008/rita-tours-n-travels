@@ -1,4 +1,5 @@
-import { Link } from "@tanstack/react-router";
+"use client";
+import Link from "next/link";
 import { ArrowLeft, MapPinned } from "lucide-react";
 import SiteHeader from "@/components/site/SiteHeader";
 import SiteFooter from "@/components/site/SiteFooter";
@@ -18,7 +19,7 @@ export default function PagePlaceholder({ title, description }) {
               {description ?? "This page is on its way. The homepage holds everything available today — journeys, destinations and planning."}
             </p>
             <Link
-              to="/"
+              href="/"
               className="mt-7 inline-flex items-center gap-2 rounded-full bg-electric px-5 py-2.5 text-[13px] font-semibold text-white transition-colors hover:bg-[#1560f0]"
             >
               <ArrowLeft className="h-4 w-4" aria-hidden="true" />

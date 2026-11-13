@@ -1,4 +1,5 @@
-import { Link } from "@tanstack/react-router";
+"use client";
+import Link from "next/link";
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Youtube } from "lucide-react";
 import Logo from "@/components/site/Logo";
 import { useApp } from "@/lib/AppContext";
@@ -39,7 +40,7 @@ export default function SiteFooter() {
           <ul className="mt-5 grid grid-cols-2 gap-x-6 gap-y-2.5 lg:grid-cols-1">
             {navigation.filter((item) => item.to !== "/").map((item) => (
               <li key={item.to}>
-                <Link to={item.to} className="text-[13.5px] text-white/70 transition-colors hover:text-white">
+                <Link href={item.to} className="text-[13.5px] text-white/70 transition-colors hover:text-white">
                   {t(item.labelKey)}
                 </Link>
               </li>
@@ -54,7 +55,7 @@ export default function SiteFooter() {
           <ul className="mt-5 space-y-2.5">
             {legalLinks.map((item) => (
               <li key={item.to}>
-                <Link to={item.to} className="text-[13.5px] text-white/70 transition-colors hover:text-white">
+                <Link href={item.to} className="text-[13.5px] text-white/70 transition-colors hover:text-white">
                   {item.label}
                 </Link>
               </li>

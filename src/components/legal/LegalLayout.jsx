@@ -1,17 +1,15 @@
-import { Link } from "@tanstack/react-router";
+"use client";
+import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import SiteHeader from "@/components/site/SiteHeader";
-import SiteFooter from "@/components/site/SiteFooter";
 
 export default function LegalLayout({ title, intro, updated, sections }) {
   return (
     <>
-      <SiteHeader />
       <main className="bg-cloud pb-20 pt-32">
         <div className="shell">
           <div className="mx-auto max-w-3xl">
             <Link
-              to="/"
+              href="/"
               className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-electric"
             >
               <ArrowLeft className="h-3.5 w-3.5" aria-hidden="true" />
@@ -64,7 +62,6 @@ export default function LegalLayout({ title, intro, updated, sections }) {
           </div>
         </div>
       </main>
-      <SiteFooter />
     </>
   );
 }

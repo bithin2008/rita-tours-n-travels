@@ -1,4 +1,5 @@
-import { Link } from "@tanstack/react-router";
+"use client";
+import Link from "next/link";
 import { ArrowRight, SearchX, X } from "lucide-react";
 import SectionHeading from "@/components/site/SectionHeading";
 import TourCard from "@/components/home/TourCard";
@@ -21,7 +22,7 @@ export default function FeaturedTours({ filters, onClear, onOpen }) {
             subtitle={t("section.experiencesSub")}
           />
           <Link
-            to="/tours"
+            href="/tours"
             className="group inline-flex w-fit items-center gap-2 rounded-full border border-navy/15 px-5 py-2.5 text-[13px] font-semibold text-navy transition-colors duration-300 hover:border-electric hover:text-electric"
           >
             {t("cta.viewAllTours")}
@@ -70,7 +71,7 @@ export default function FeaturedTours({ filters, onClear, onOpen }) {
                 {t("tours.clear")}
               </button>
               <Link
-                to="/tour-planning"
+                href="/tour-planning"
                 className="rounded-full border border-navy/15 px-5 py-2.5 text-[13px] font-semibold text-navy transition-colors hover:border-electric hover:text-electric"
               >
                 {t("cta.planJourney")}

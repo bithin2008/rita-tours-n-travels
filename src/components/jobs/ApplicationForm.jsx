@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { CheckCircle2, Loader2, Send } from "lucide-react";
-import { base44 } from "@/api/base44Client";
+import { base44 } from "@/lib/base44Client";
 import { Field, SelectInput, TextArea, TextInput } from "@/components/planning/FormBits";
 import { isValidEmail } from "@/lib/leads";
 import { cn } from "@/lib/utils";

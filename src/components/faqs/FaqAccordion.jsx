@@ -1,5 +1,6 @@
+"use client";
 import { useState } from "react";
-import { Link } from "@tanstack/react-router";
+import Link from "next/link";
 import { ArrowRight, HelpCircle } from "lucide-react";
 import {
   Accordion,
@@ -63,7 +64,7 @@ export default function FaqAccordion({ faqs }) {
             Ask our planning desk and we will answer within one business day.
           </p>
           <Link
-            to="/contact"
+            href="/contact"
             className="mt-5 inline-flex items-center gap-2 rounded-full bg-electric px-5 py-2.5 text-[12.5px] font-semibold text-white transition-colors hover:bg-[#1560f0]"
           >
             Contact us

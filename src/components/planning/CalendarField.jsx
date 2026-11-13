@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { format, isValid, parseISO } from "date-fns";
 import { CalendarDays, ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
