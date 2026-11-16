@@ -1,5 +1,6 @@
 import PageHero from "@/components/site/PageHero";
 import CompanyStory from "@/components/about/CompanyStory";
+import EuropeanCollage from "@/components/about/EuropeanCollage";
 import HeritageTimeline from "@/components/about/HeritageTimeline";
 import TeamSection from "@/components/about/TeamSection";
 import SustainabilityCommitment from "@/components/about/SustainabilityCommitment";
@@ -51,6 +52,9 @@ export default function AboutPage() {
 
         <Reveal>
           <CompanyStory story={about.story} />
+        </Reveal>
+        <Reveal>
+          <EuropeanCollage />
         </Reveal>
         <Reveal>
           <HeritageTimeline heritage={about.heritage} />
