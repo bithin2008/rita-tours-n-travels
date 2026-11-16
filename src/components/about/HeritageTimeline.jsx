@@ -6,7 +6,7 @@ export default function HeritageTimeline({ heritage }) {
       <div className="shell">
         <SectionHeading eyebrow={heritage.eyebrow} title={heritage.title} subtitle={heritage.subtitle} />
 
-        <ol className="mt-12 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-5 lg:gap-y-0">
+        <ol className="mt-12 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-y-0">
           {heritage.items.map((item) => (
             <li key={item.year} className="relative border-l border-navy/15 pl-5 lg:border-l-0 lg:border-t lg:pl-0 lg:pt-6">
               <span
@@ -20,9 +20,9 @@ export default function HeritageTimeline({ heritage }) {
           ))}
         </ol>
 
-        <p className="mt-10 max-w-3xl rounded-2xl border border-navy/10 bg-white px-5 py-4 text-[12.5px] leading-relaxed text-navy/55">
+        {/* <p className="mt-10 max-w-3xl rounded-2xl border border-navy/10 bg-white px-5 py-4 text-[12.5px] leading-relaxed text-navy/55">
           {heritage.note}
-        </p>
+        </p> */}
       </div>
     </section>
   );

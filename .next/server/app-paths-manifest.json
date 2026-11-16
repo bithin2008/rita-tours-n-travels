@@ -1,7 +1,4 @@
 {
-  "/tour-planning/page": "app/tour-planning/page.js",
-  "/tours/page": "app/tours/page.js",
-  "/contact/page": "app/contact/page.js",
   "/page": "app/page.js",
   "/about/page": "app/about/page.js"
 }
