@@ -8,6 +8,12 @@ const nextConfig = {
         port: "",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "media.base44.com",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
 }

@@ -7,7 +7,7 @@ import { useApp } from "@/lib/AppContext";
 
 export default function FinalCta() {
   const { t } = useApp();
-  const backdrop = getTourById("amalfi-coast");
+  const backdrop = getTourById("maastricht");
 
   return (
     <section id="final-cta" className="relative isolate overflow-hidden bg-navy">

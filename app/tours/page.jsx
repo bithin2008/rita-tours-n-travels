@@ -50,7 +50,7 @@ export default function ToursPage() {
   return (
     <>
 
-      <main className="pb-20">
+      <main>
         <PageHero
           eyebrow="Tours"
           title="Every journey in the catalogue."
@@ -94,9 +94,9 @@ export default function ToursPage() {
             {results.length ? (
               view === "grid" ? (
                 <RevealGroup className="mt-5 grid grid-cols-1 items-stretch gap-5 sm:grid-cols-2 xl:grid-cols-3">
-                  {results.map((tour) => (
-                    <TourCard key={tour.id} tour={tour} onOpen={openTour} />
-                  ))}
+{results.map((tour) => (
+  <TourCard key={tour.id} tour={tour} />
+))}
                 </RevealGroup>
               ) : (
                 <div className="mt-5 flex flex-col gap-4">

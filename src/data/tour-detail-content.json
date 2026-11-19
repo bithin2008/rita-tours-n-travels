@@ -1,0 +1,69 @@
+{
+  "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+  "durationFallback": "{count} nights",
+  "breadcrumb": {
+    "label": "Breadcrumb",
+    "home": "Home",
+    "tours": "Tours"
+  },
+  "hero": {
+    "travellers": "Up to {count} travellers",
+    "enquire": "Enquire about this journey",
+    "plan": "Plan your journey",
+    "removeWishlist": "Remove {title} from wishlist",
+    "saveWishlist": "Save {title} to wishlist"
+  },
+  "journey": {
+    "eyebrow": "The journey",
+    "highlights": "Journey highlights",
+    "note": "The moments above are a starting point. Your planner will confirm the day-by-day order and any included experiences in your personal quote."
+  },
+  "details": {
+    "title": "At a glance",
+    "duration": "Duration",
+    "groupSize": "Group size",
+    "route": "Route",
+    "carbonEstimate": "Carbon estimate",
+    "carbonPerPerson": "~{amount} kg CO₂e per person",
+    "carbonUnknown": "Ask your planner",
+    "travelMonths": "Travel months",
+    "enquire": "Enquire about this journey"
+  },
+  "enquiry": {
+    "eyebrow": "Enquire",
+    "title": "Start a conversation about this journey.",
+    "description": "Tell us who is travelling and roughly when. A named planner will reply with dates, a day-by-day outline, and a personal quote. Nothing is charged and nothing is booked at this stage.",
+    "formTitle": "Enquire about {title}",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "message": "Message",
+    "messagePlaceholder": "I'd like to know more about {title}.",
+    "leadMessagePrefix": "Tour enquiry: {title}",
+    "emailTopic": "Journey enquiry: {title}",
+    "consentBeforeLink": "I agree to be contacted about this enquiry and have read the ",
+    "consentAfterLink": ".",
+    "privacyPolicy": "privacy policy",
+    "errorInvalid": "Add your name, a valid email address, and a short message so we can help.",
+    "errorConsent": "Please agree to be contacted about this enquiry.",
+    "errorSending": "Your enquiry could not be sent. Please try again or email {email}.",
+    "sending": "Sending enquiry…",
+    "submit": "Send enquiry",
+    "successTitle": "Your enquiry is on its way",
+    "successMessage": "A named planner will be in touch within one business day.",
+    "sendAnother": "Send another enquiry"
+  },
+  "related": {
+    "eyebrow": "Keep exploring",
+    "title": "Other journeys you may like",
+    "allTours": "All tours"
+  },
+  "closing": {
+    "eyebrow": "Your next chapter",
+    "title": "Your next great adventure starts here.",
+    "description": "Tell us the month, the mood and the people travelling. We will do the rest.",
+    "exploreTours": "Explore tours",
+    "planJourney": "Plan your journey"
+  }
+}
