@@ -7,7 +7,3 @@ export async function listFaqs() {
 export async function listJobOpenings() {
   return [];
 }
-
-export async function sendContactEmails(data) {
-  return { visitor: "sent", team: "sent" };
-}

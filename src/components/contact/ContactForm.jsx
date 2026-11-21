@@ -3,7 +3,6 @@ import { useState } from "react";
 import { CheckCircle2, Loader2, Send } from "lucide-react";
 import { Field, SelectInput, TextArea, TextInput } from "@/components/planning/FormBits";
 import { createLead, isValidEmail } from "@/lib/leads";
-import { sendContactEmails } from "@/lib/server-actions";
 import { useApp } from "@/lib/AppContext";
 import { cn } from "@/lib/utils";
 
@@ -52,14 +51,22 @@ export default function ContactForm() {
         currency,
       });
 
-      await sendContactEmails({
-        name: form.name.trim(),
-        email: form.email.trim(),
-        topic: form.topic,
-        message: form.message.trim(),
-        language,
-        currency,
-      }).catch(() => {});
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: form.name.trim(),
+          email: form.email.trim(),
+          topic: form.topic,
+          message: form.message.trim(),
+          language,
+          currency,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send email");
+      }
 
       setForm(EMPTY);
       setStatus("idle");
