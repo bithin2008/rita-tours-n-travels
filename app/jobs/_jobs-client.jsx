@@ -30,7 +30,7 @@ export default function JobsClient({ openings }) {
           eyebrow="Careers"
           title="Plan journeys for a living"
           subtitle="We are a small European studio who believe the best itineraries come from people who have walked the streets themselves. If that sounds like your kind of work, we would like to meet you."
-          image="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1800&q=80"
+          image="images/job-banner.jpg"
           imageAlt="A team collaborating around a table"
         >
           <a

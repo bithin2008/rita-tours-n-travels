@@ -14,7 +14,7 @@ const CATEGORIES = [
   { id: "all", label: "All questions" },
   { id: "travel", label: "Travel" },
   { id: "payments", label: "Payments" },
-  { id: "visa", label: "Visas & documents" },
+  //
   { id: "general", label: "General" },
 ];
 

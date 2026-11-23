@@ -13,6 +13,7 @@ import videosData from "@/data/ugc-videos.json";
 import galleryData from "@/data/instagram-gallery.json";
 import aboutData from "@/data/about.json";
 import testimonialsData from "@/data/testimonials.json";
+import faqsData from "@/data/faqs.json";
 import translations from "@/data/translations.json";
 
 export const getSiteSettings = () => siteSettings;
@@ -39,6 +40,8 @@ export const getUgcVideos = () => ({ items: videosData.items, note: videosData.n
 export const getGallery = () => galleryData.items;
 
 export const getTestimonials = () => testimonialsData;
+
+export const getFaqs = () => faqsData.items;
 
 export const getCurrency = (code) =>
   siteSettings.currencies.find((currency) => currency.code === code) ?? siteSettings.currencies[0];

@@ -14,6 +14,30 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600", "700
 export const metadata = {
   title: "Home — RITA Tours N Travels",
   description: "Personalised European journeys planned around you by RITA Tours N Travels.",
+  icons: [
+    {
+      rel: "icon",
+      type: "image/x-icon",
+      url: "/favicon.ico",
+    },
+    {
+      rel: "apple-touch-icon",
+      sizes: "180x180",
+      url: "/apple-touch-icon.png",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      url: "/favicon-32x32.png",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "16x16",
+      url: "/favicon-16x16.png",
+    },
+  ],
 };
 
 export default function RootLayout({ children }) {
@@ -32,6 +56,6 @@ export default function RootLayout({ children }) {
           </AppProvider>
         </AuthProvider>
       </body>
-    </html>
+    </html >
   );
 }

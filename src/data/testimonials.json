@@ -7,10 +7,26 @@
     "repeat": 41
   },
   "badges": [
-    { "icon": "star", "value": "4.9 / 5", "label": "1,240 verified reviews" },
-    { "icon": "heart", "value": "96%", "label": "Would travel with us again" },
-    { "icon": "shield", "value": "Protected", "label": "EU package travel cover" },
-    { "icon": "clock", "value": "24/7", "label": "Emergency line on the road" }
+    {
+      "icon": "star",
+      "value": "4.9 / 5",
+      "label": "1,240 verified reviews"
+    },
+    {
+      "icon": "heart",
+      "value": "96%",
+      "label": "Would travel with us again"
+    },
+    {
+      "icon": "shield",
+      "value": "Protected",
+      "label": "EU package travel cover"
+    },
+    {
+      "icon": "clock",
+      "value": "24/7",
+      "label": "Emergency line on the road"
+    }
   ],
   "featured": {
     "name": "Elena & Marco Pellegrini",
@@ -18,12 +34,21 @@
     "journey": "Amalfi & Campania · 9 days · September 2026",
     "title": "The coast, rearranged twice — and better for it",
     "quote": "We had already booked a hotel in Positano when our planner asked what we actually wanted from the week. The honest answer was quiet evenings, not beach clubs. She moved our base two villages along, put the busy days at the start, and left the last three days almost empty. Best of all, she kept the original booking refundable while we decided. Nothing felt like a sales conversation.",
-    "image": "https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=80",
+    "image": "/images/testimonial.jpg",
     "imageAlt": "A terraced coastal village on the Amalfi Coast at dusk",
     "stats": [
-      { "value": "9", "label": "days away" },
-      { "value": "3", "label": "bases, all reached by train" },
-      { "value": "0", "label": "flights taken" }
+      {
+        "value": "9",
+        "label": "days away"
+      },
+      {
+        "value": "3",
+        "label": "bases, all reached by train"
+      },
+      {
+        "value": "0",
+        "label": "flights taken"
+      }
     ]
   },
   "photoReviews": [

@@ -8,10 +8,7 @@ import { cn } from "@/lib/utils";
 
 const TOPICS = [
   "New journey enquiry",
-  "Existing booking",
-  "Payments & invoices",
-  "Visas & documents",
-  "Press & partnerships",
+  "Existing booking"
 ];
 
 const EMPTY = { name: "", email: "", topic: TOPICS[0], message: "", consent: false };

@@ -29,7 +29,7 @@ export default async function FaqsPage() {
           eyebrow="FAQs"
           title="Everything travellers ask us"
           subtitle="Clear answers on planning, payments, visas and travelling across Europe with RITA. Can't find yours? Our planning desk replies in a day."
-          image="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1800&q=80"
+          image="images/faq-banner.jpg"
           imageAlt="A traveller planning a route with a map and passport"
         />
 

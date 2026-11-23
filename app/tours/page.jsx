@@ -55,7 +55,7 @@ export default function ToursPage() {
           eyebrow="Tours"
           title="Every journey in the catalogue."
           subtitle="Hand-built weeks and short escapes across six European countries. Filter by place, season, budget and mood — then open any journey for the full picture."
-          image="https://media.base44.com/images/public/6aec6c41ac98455faf00216e/e9231164e_generated_54b92f77.png"
+          image="images/tours-banner.jpg"
           imageAlt="Alpine peaks reflected in a still Swiss lake"
         />
 
@@ -94,9 +94,9 @@ export default function ToursPage() {
             {results.length ? (
               view === "grid" ? (
                 <RevealGroup className="mt-5 grid grid-cols-1 items-stretch gap-5 sm:grid-cols-2 xl:grid-cols-3">
-{results.map((tour) => (
-  <TourCard key={tour.id} tour={tour} />
-))}
+                  {results.map((tour) => (
+                    <TourCard key={tour.id} tour={tour} />
+                  ))}
                 </RevealGroup>
               ) : (
                 <div className="mt-5 flex flex-col gap-4">

@@ -23,7 +23,7 @@ export default function ContactPage() {
           eyebrow="Contact"
           title="Talk to the people who plan the trips"
           subtitle="No call centre, no ticket queue. Tell us what you are dreaming of and the planner who would build it replies — usually the same day."
-          image="https://images.unsplash.com/photo-1534351590666-13e3e96b5017?auto=format&fit=crop&w=1800&q=80"
+          image="images/contact-banner.jpg"
           imageAlt="Canal houses in Amsterdam at golden hour"
         />
 

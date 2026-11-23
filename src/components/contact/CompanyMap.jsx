@@ -6,7 +6,7 @@ export default function CompanyMap() {
   const query = encodeURIComponent(settings.brand.addressLine);
 
   return (
-    <section className="bg-white pb-20 sm:pb-24">
+    <section className="bg-white pt-20 pb-20 sm:pb-24">
       <div className="shell">
         <div className="overflow-hidden rounded-[26px] border border-navy/10 soft-shadow">
           <iframe

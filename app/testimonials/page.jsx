@@ -30,7 +30,7 @@ export default function TestimonialsPage() {
           eyebrow="Testimonials"
           title="The journeys, in their words"
           subtitle="Photo reviews from the road, unedited clips, and the written ones — including the trips that had to be rearranged mid-week."
-          image="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1800&q=80"
+          image="images/testimonial-banner.jpg"
           imageAlt="A traveller looking over a canal in Venice"
         >
           <div className="mt-8 inline-flex flex-wrap items-center gap-x-4 gap-y-2 rounded-full border border-white/20 bg-white/10 px-5 py-2.5 backdrop-blur">

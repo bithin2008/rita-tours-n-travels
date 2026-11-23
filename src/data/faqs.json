@@ -1,0 +1,89 @@
+{
+  "items": [
+    {
+      "id": "faq-1",
+      "question": "How do I book a journey with RITA?",
+      "answer": "Browse our tours on the tours page, click on any journey you like, and use the enquiry form or WhatsApp to contact our planning desk. We will build a personalised itinerary and send you a quotation — no obligation, no deposit required to start.",
+      "category": "general",
+      "order": 1
+    },
+    {
+      "id": "faq-2",
+      "question": "What is included in the tour price?",
+      "answer": "Prices are per person in EUR based on two sharing, and typically include accommodation, internal transport, guided activities, and breakfast. International flights, travel insurance, lunches, dinners (unless stated), and personal expenses are not included. Every quotation lists exactly what is covered.",
+      "category": "payments",
+      "order": 2
+    },
+    {
+      "id": "faq-3",
+      "question": "Do I need a visa for European travel?",
+      "answer": "Visa requirements depend on your nationality and destination. Schengen countries require a Schengen visa for many non-EU passport holders. We recommend checking the official embassy website of your destination country. Our team can provide supporting documents for your visa application once you book.",
+      "category": "visa",
+      "order": 3
+    },
+    {
+      "id": "faq-4",
+      "question": "Can I customise my itinerary?",
+      "answer": "Yes. Every journey can be tailored to your dates, budget, interests and travel style. Use the tour planning page to request a custom itinerary, and a named planner will build it around you.",
+      "category": "travel",
+      "order": 4
+    },
+    {
+      "id": "faq-5",
+      "question": "What is the maximum group size?",
+      "answer": "We cap our day journeys at 50 travellers to protect local life and keep the experience intimate. Custom and private journeys can be arranged for smaller groups.",
+      "category": "general",
+      "order": 5
+    },
+    {
+      "id": "faq-6",
+      "question": "How do I pay for my journey?",
+      "answer": "We accept bank transfer and major credit/debit cards. A deposit secures your booking, with the balance due before departure. Payment details are included in your quotation.",
+      "category": "payments",
+      "order": 6
+    },
+    {
+      "id": "faq-7",
+      "question": "What is your cancellation policy?",
+      "answer": "Cancellations made more than 30 days before departure receive a full refund minus any non-recoverable third-party costs. Cancellations within 30 days may incur fees as outlined in your quotation. Travel insurance is recommended.",
+      "category": "payments",
+      "order": 7
+    },
+    {
+      "id": "faq-8",
+      "question": "Is travel insurance required?",
+      "answer": "Yes, travel insurance is required for all journeys. It must cover medical expenses, trip cancellation, and repatriation. You will need to provide proof of insurance before departure.",
+      "category": "general",
+      "order": 8
+    },
+    {
+      "id": "faq-9",
+      "question": "Are the tours suitable for families with children?",
+      "answer": "Many of our journeys are family-friendly. Each tour listing notes the maximum travellers and whether children are welcome. Private family journeys can be customised with child-appropriate activities and pacing.",
+      "category": "travel",
+      "order": 9
+    },
+    {
+      "id": "faq-10",
+      "question": "How far in advance should I book?",
+      "answer": "We recommend booking at least 2–3 months in advance, especially for peak season (June–September) and Christmas markets. Custom itineraries need more lead time to plan properly.",
+      "category": "general",
+      "order": 10
+    },
+    {
+      "id": "faq-11",
+      "question": "What happens if my journey is cancelled by RITA?",
+      "answer": "If we cancel a journey for any reason, you receive a full refund of all payments within 14 days, or you may transfer to another date or destination at no extra cost.",
+      "category": "payments",
+      "order": 11
+    },
+    {
+      "id": "faq-12",
+      "question": "Can I travel solo?",
+      "answer": "Absolutely. Solo travellers are welcome on all group journeys. A single supplement may apply for private accommodation. Alternatively, we can arrange a private journey just for you.",
+      "category": "travel",
+      "order": 12
+    }
+  ],
+  "note": "FAQs are indicative only. Always confirm details in your quotation before booking."
+}

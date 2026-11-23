@@ -23,7 +23,8 @@ const STEPS = ["Trip basics", "Style & budget", "Your details"];
 const PACE_LABELS = { slow: "Slow — long stays", balanced: "Balanced", full: "Full — see everything" };
 const FLEX_LABELS = { fixed: "fixed dates", flexible: "flexible dates", month: "month only" };
 
-const emptyForm = {  destination: "",
+const emptyForm = {
+  destination: "",
   month: "",
   startDate: "",
   endDate: "",
@@ -148,7 +149,7 @@ export default function TourPlanningPage() {
           eyebrow="Tour planning"
           title="Tell us the trip. We will build the route."
           subtitle="Three short steps: where and when, how you like to travel, then how to reach you. A named planner replies with outline routes and an honest price — no payment, no obligation."
-          image="https://media.base44.com/images/public/6aec6c41ac98455faf00216e/32951fe5c_generated_b6ccbf3c.png"
+          image="images/tour-planning-banner.jpg"
           imageAlt="Whitewashed Cycladic village above the Aegean at dusk"
         />
 
