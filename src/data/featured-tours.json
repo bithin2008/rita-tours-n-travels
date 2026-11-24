@@ -2,18 +2,19 @@
   "items": [
     {
       "id": "amsterdam-delft-denhaag-rotterdam",
-      "title": "Amsterdam > Delft > Den Haag > Rotterdam",
+      "title": "Rotterdam, Delft \u0026 The Hague from Amsterdam",
       "destination": "Amsterdam",
       "country": "Netherlands",
       "region": "North Holland",
-      "durationNights": 4,
-      "durationLabel": "4 nights",
-      "priceFrom": 850,
-      "category": "City & Culture",
+      "durationNights": 0,
+      "durationLabel": "9 hours",
+      "priceFrom": 135,
+      "category": "City Tour",
       "eco": true,
       "moods": [
         "culture",
-        "family"
+        "family",
+        "history"
       ],
       "availableMonths": [
         1,
@@ -29,17 +30,34 @@
         11,
         12
       ],
-      "maxTravellers": 16,
-      "carbonKgEstimate": 45,
-      "image": "images/featured-tour/rotterdam.jpg",
-      "heroTitle": "Four Dutch cities in four days.",
-      "heroDescription": "Amsterdam canals, Delft pottery, Den Haag's seaside boulevard and Rotterdam's modern skyline — all reachable by train.",
-      "summary": "A compact Dutch circuit connecting Amsterdam, Delft, Den Haag and Rotterdam by rail, with city walks and museum mornings.",
+      "maxTravellers": 80,
+      "carbonKgEstimate": 30,
+      "image": "/images/tours/amsterdam-delft-denhaag-rotterdam/hero.jpg",
+      "heroTitle": "Three Dutch cities in one trip",
+      "heroDescription": "Step beyond Amsterdam and explore the contrasting souls of The Hague, Rotterdam, and Delft — from stately government buildings to bold modern architecture and centuries-old pottery craftsmanship — all aboard a comfortable coach with a knowledgeable guide.",
+      "summary": "A guided journey from Amsterdam that takes in three distinct Dutch cities. Begin in The Hague, seat of the Dutch government, with views of the Peace Palace and Binnenhof. Continue to Rotterdam for its striking skyline and lively Markthal market hall. Finish in Delft, where cobbled streets lead to the iconic blue-and-white porcelain factory. Longer stops at each city mean you explore at a relaxed pace rather than racing through a checklist.",
+      "itinerary": [
+        "Depart Amsterdam by comfortable coach",
+        "The Hague — Peace Palace, Binnenhof exterior, city centre walk",
+        "Rotterdam — modern skyline drive and Markthal market hall visit",
+        "Delft — historic centre stroll and Royal Delft porcelain factory tour",
+        "Return to Amsterdam"
+      ],
       "highlights": [
-        "Amsterdam canal walk at golden hour",
-        "Delft blue pottery workshop",
-        "Den Haag beachfront promenade",
-        "Rotterdam Markthal and cube houses"
+        "The Hague city centre, Peace Palace and Binnenhof exterior",
+        "Rotterdam\u0027s modern skyline and Markthal market hall",
+        "Delft\u0027s historic centre and Royal Delft porcelain factory",
+        "Live commentary from a professional guide",
+        "Transport in an air-conditioned coach",
+        "Hotel pickup and drop-off in central Amsterdam",
+        "Gratuities included"
+      ],
+      "gallery": [
+        "/images/tours/amsterdam-delft-denhaag-rotterdam/gallery-01.jpg",
+        "/images/tours/amsterdam-delft-denhaag-rotterdam/gallery-02.jpg",
+        "/images/tours/amsterdam-delft-denhaag-rotterdam/gallery-03.jpg",
+        "/images/tours/amsterdam-delft-denhaag-rotterdam/gallery-04.jpg",
+        "/images/tours/amsterdam-delft-denhaag-rotterdam/gallery-05.jpg"
       ]
     },
     {
@@ -82,11 +100,18 @@
         "Edam cheese market and tasting",
         "Volendam fishing harbour",
         "Marken island walk"
+      ],
+      "gallery": [
+        "/images/tours/amsterdam-zaanse-schans-edam-volendam-marken/hero.jpg",
+        "/images/tours/amsterdam-zaanse-schans-edam-volendam-marken/zaanse-schans.jpg",
+        "/images/tours/amsterdam-zaanse-schans-edam-volendam-marken/edam.jpg",
+        "/images/tours/amsterdam-zaanse-schans-edam-volendam-marken/volendam.jpg",
+        "/images/tours/amsterdam-zaanse-schans-edam-volendam-marken/marken.jpg"
       ]
     },
     {
       "id": "roermond-shopping-utrecht",
-      "title": "Roermond Shopping & Utrecht Day Trip",
+      "title": "Roermond Shopping \u0026 Utrecht Day Trip",
       "destination": "Roermond",
       "country": "Netherlands",
       "region": "Limburg",
@@ -117,17 +142,24 @@
       "carbonKgEstimate": 15,
       "image": "images/featured-tour/utrecht.jpg",
       "heroTitle": "Designer outlets and cathedral towers.",
-      "heroDescription": "Morning shopping at Roermond Designer Outlet, afternoon exploring Utrecht's canals and wharf cellars.",
-      "summary": "A day of retail therapy at Roermond Designer Outlet followed by a stroll through Utrecht's historic centre and canal wharves.",
+      "heroDescription": "Morning shopping at Roermond Designer Outlet, afternoon exploring Utrecht\u0027s canals and wharf cellars.",
+      "summary": "A day of retail therapy at Roermond Designer Outlet followed by a stroll through Utrecht\u0027s historic centre and canal wharves.",
       "highlights": [
         "Roermond Designer Outlet shopping",
         "Utrecht Dom Tower and canals",
         "Wharf cellar cafés"
+      ],
+      "gallery": [
+        "/images/tours/roermond-shopping-utrecht/hero.jpg",
+        "/images/tours/roermond-shopping-utrecht/roermond-outlet.jpg",
+        "/images/tours/roermond-shopping-utrecht/utrecht-canal.jpg",
+        "/images/tours/roermond-shopping-utrecht/dom-tower.jpg",
+        "/images/tours/roermond-shopping-utrecht/wharf-cellars.jpg"
       ]
     },
     {
       "id": "amsterdam-delft-den-haag-train",
-      "title": "From Amsterdam by Train: Delft & The Hague Small-Group Tour",
+      "title": "From Amsterdam by Train: Delft \u0026 The Hague Small-Group Tour",
       "destination": "Delft",
       "country": "Netherlands",
       "region": "South Holland",
@@ -158,13 +190,20 @@
       "carbonKgEstimate": 10,
       "image": "images/featured-tour/hague.jpg",
       "heroTitle": "Delftware and seaside breezes.",
-      "heroDescription": "A small-group train trip from Amsterdam to Delft's historic centre and Den Haag's beachfront boulevard.",
+      "heroDescription": "A small-group train trip from Amsterdam to Delft\u0027s historic centre and Den Haag\u0027s beachfront boulevard.",
       "summary": "A guided small-group day tour by train from Amsterdam to Delft and Den Haag, with pottery workshops and seaside walks.",
       "highlights": [
         "Delft blue pottery demonstration",
         "Delft Markt square walk",
         "Den Haag beachfront promenade",
         "Small-group train travel"
+      ],
+      "gallery": [
+        "/images/tours/amsterdam-delft-den-haag-train/hero.jpg",
+        "/images/tours/amsterdam-delft-den-haag-train/delft.jpg",
+        "/images/tours/amsterdam-delft-den-haag-train/delft-pottery.jpg",
+        "/images/tours/amsterdam-delft-den-haag-train/hague.jpg",
+        "/images/tours/amsterdam-delft-den-haag-train/beachfront.jpg"
       ]
     },
     {
@@ -207,6 +246,13 @@
         "Belfry of Bruges climb",
         "Belgian chocolate tasting",
         "Markt square and Belfry"
+      ],
+      "gallery": [
+        "/images/tours/bruges-day-trip/hero.jpg",
+        "/images/tours/bruges-day-trip/canal.jpg",
+        "/images/tours/bruges-day-trip/belfry.jpg",
+        "/images/tours/bruges-day-trip/chocolate.jpg",
+        "/images/tours/bruges-day-trip/markt-square.jpg"
       ]
     },
     {
@@ -243,11 +289,18 @@
       "image": "images/featured-tour/den-bosch.jpg",
       "heroTitle": "Cheese, canals and cathedral towns.",
       "heroDescription": "A day from Amsterdam to Utrecht, with stops in Gouda for cheese and Den Bosch for its historic centre and cathedral.",
-      "summary": "A Dutch city circuit from Amsterdam: Gouda cheese market, Utrecht's canal wharves, and Den Bosch's St. John's Cathedral.",
+      "summary": "A Dutch city circuit from Amsterdam: Gouda cheese market, Utrecht\u0027s canal wharves, and Den Bosch\u0027s St. John\u0027s Cathedral.",
       "highlights": [
         "Gouda cheese market",
         "Utrecht canal wharf cellars",
-        "Den Bosch St. John's Cathedral"
+        "Den Bosch St. John\u0027s Cathedral"
+      ],
+      "gallery": [
+        "/images/tours/amsterdam-utrecht-gouda-den-bosch/hero.jpg",
+        "/images/tours/amsterdam-utrecht-gouda-den-bosch/gouda-cheese.jpg",
+        "/images/tours/amsterdam-utrecht-gouda-den-bosch/utrecht-canal.jpg",
+        "/images/tours/amsterdam-utrecht-gouda-den-bosch/den-bosch-cathedral.jpg",
+        "/images/tours/amsterdam-utrecht-gouda-den-bosch/wharf-cellars.jpg"
       ]
     },
     {
@@ -280,12 +333,19 @@
       "carbonKgEstimate": 14,
       "image": "images/featured-tour/geithoorn.jpg",
       "heroTitle": "The Venice of the North.",
-      "heroDescription": "Giethoorn's car-free village with thatched-roof farms, wooden bridges and whisper-quiet canals explored by whisper boat.",
+      "heroDescription": "Giethoorn\u0027s car-free village with thatched-roof farms, wooden bridges and whisper-quiet canals explored by whisper boat.",
       "summary": "A day in Giethoorn, the car-free village of canals and wooden bridges, explored by electric whisper boat and on foot.",
       "highlights": [
         "Whisper boat canal tour",
         "Thatched-roof farmhouses",
         "Wooden bridge walks"
+      ],
+      "gallery": [
+        "/images/tours/giethoorn/hero.jpg",
+        "/images/tours/giethoorn/whisper-boat.jpg",
+        "/images/tours/giethoorn/canal.jpg",
+        "/images/tours/giethoorn/thatched-roof.jpg",
+        "/images/tours/giethoorn/wooden-bridge.jpg"
       ]
     },
     {
@@ -297,7 +357,7 @@
       "durationNights": 2,
       "durationLabel": "2 nights",
       "priceFrom": 420,
-      "category": "City & Culture",
+      "category": "City \u0026 Culture",
       "eco": false,
       "moods": [
         "culture",
@@ -319,13 +379,20 @@
       "carbonKgEstimate": 38,
       "image": "images/featured-tour/maastricht.jpg",
       "heroTitle": "Limestone hills and Burgundian life.",
-      "heroDescription": "Two nights in Limburg's oldest city: caves, basilicas, and the southern Burgundian food and wine culture.",
+      "heroDescription": "Two nights in Limburg\u0027s oldest city: caves, basilicas, and the southern Burgundian food and wine culture.",
       "summary": "A weekend in Maastricht: St. Servaas Basilica, the underground caves, Vrijthof square and Burgundian dinners with local wines.",
       "highlights": [
         "St. Servaas Basilica visit",
         "Maastricht underground caves",
         "Vrijthof square evening",
         "Burgundian dinner with Limburg wine"
+      ],
+      "gallery": [
+        "/images/tours/maastricht/hero.jpg",
+        "/images/tours/maastricht/servaas-basilica.jpg",
+        "/images/tours/maastricht/caves.jpg",
+        "/images/tours/maastricht/vrijthof.jpg",
+        "/images/tours/maastricht/burgundian-dinner.jpg"
       ]
     },
     {
@@ -358,12 +425,19 @@
       "carbonKgEstimate": 16,
       "image": "images/featured-tour/valkenburg.jpg",
       "heroTitle": "Castle ruins and marlstone caves.",
-      "heroDescription": "A day in Limburg's Valkenburg: castle hill ruins, marlstone caves and the historic town centre.",
+      "heroDescription": "A day in Limburg\u0027s Valkenburg: castle hill ruins, marlstone caves and the historic town centre.",
       "summary": "One day in Valkenburg: Velvet Cave and Municipal Cave tours, castle ruins on the hill and a walk through the marlstone town.",
       "highlights": [
         "Velvet Cave and Municipal Cave tour",
         "Castle ruins on the hill",
         "Marlstone town centre walk"
+      ],
+      "gallery": [
+        "/images/tours/valkenburg/hero.jpg",
+        "/images/tours/valkenburg/castle-ruins.jpg",
+        "/images/tours/valkenburg/velvet-cave.jpg",
+        "/images/tours/valkenburg/municipal-cave.jpg",
+        "/images/tours/valkenburg/town-centre.jpg"
       ]
     },
     {
@@ -375,7 +449,7 @@
       "durationNights": 2,
       "durationLabel": "2 nights",
       "priceFrom": 380,
-      "category": "City & Culture",
+      "category": "City \u0026 Culture",
       "eco": false,
       "moods": [
         "culture",
@@ -407,6 +481,13 @@
         "Diamond district tour",
         "Rubens House museum",
         "Meir shopping street"
+      ],
+      "gallery": [
+        "/images/tours/antwerp-belgium/hero.jpg",
+        "/images/tours/antwerp-belgium/cathedral.jpg",
+        "/images/tours/antwerp-belgium/diamond-district.jpg",
+        "/images/tours/antwerp-belgium/rubens-house.jpg",
+        "/images/tours/antwerp-belgium/meir.jpg"
       ]
     },
     {
@@ -418,7 +499,7 @@
       "durationNights": 2,
       "durationLabel": "2 nights",
       "priceFrom": 360,
-      "category": "City & Culture",
+      "category": "City \u0026 Culture",
       "eco": true,
       "moods": [
         "culture",
@@ -442,13 +523,20 @@
       "carbonKgEstimate": 35,
       "image": "images/featured-tour/ghent.jpg",
       "heroTitle": "Medieval towers and canal reflections.",
-      "heroDescription": "Two nights in Ghent: Gravensteen castle, St. Bavo's Cathedral and the Graslei canal at twilight.",
-      "summary": "A weekend in Ghent: Gravensteen medieval castle, St. Bavo's with the Adoration of the Mystic Lamb, and canal-side dining.",
+      "heroDescription": "Two nights in Ghent: Gravensteen castle, St. Bavo\u0027s Cathedral and the Graslei canal at twilight.",
+      "summary": "A weekend in Ghent: Gravensteen medieval castle, St. Bavo\u0027s with the Adoration of the Mystic Lamb, and canal-side dining.",
       "highlights": [
         "Gravensteen castle tour",
-        "St. Bavo's Cathedral and Mystic Lamb",
+        "St. Bavo\u0027s Cathedral and Mystic Lamb",
         "Graslei and Korenlei canals",
         "Canal-side evening dinner"
+      ],
+      "gallery": [
+        "/images/tours/ghent-belgium/hero.jpg",
+        "/images/tours/ghent-belgium/gravensteen.jpg",
+        "/images/tours/ghent-belgium/st-bavos.jpg",
+        "/images/tours/ghent-belgium/graslei.jpg",
+        "/images/tours/ghent-belgium/canal-dinner.jpg"
       ]
     },
     {
@@ -480,19 +568,26 @@
       "maxTravellers": 14,
       "carbonKgEstimate": 22,
       "image": "images/featured-tour/aachen.jpg",
-      "heroTitle": "Charlemagne's cathedral and spa springs.",
+      "heroTitle": "Charlemagne\u0027s cathedral and spa springs.",
       "heroDescription": "A day trip to Aachen: the UNESCO cathedral, historic town hall and the famous Elisenbrunnen spa fountain.",
-      "summary": "One day in Aachen: Charlemagne's cathedral, the Elisenbrunnen thermal springs and the old town market square.",
+      "summary": "One day in Aachen: Charlemagne\u0027s cathedral, the Elisenbrunnen thermal springs and the old town market square.",
       "highlights": [
         "Aachen Cathedral UNESCO tour",
         "Elisenbrunnen spa fountain",
         "Historic town hall visit",
         "Old town market square"
+      ],
+      "gallery": [
+        "/images/tours/aachen-germany/hero.jpg",
+        "/images/tours/aachen-germany/cathedral.jpg",
+        "/images/tours/aachen-germany/elisenbrunnen.jpg",
+        "/images/tours/aachen-germany/town-hall.jpg",
+        "/images/tours/aachen-germany/market-square.jpg"
       ]
     },
     {
       "id": "valkenburg-aachen-christmas",
-      "title": "Christmas Trip: Valkenburg & Aachen",
+      "title": "Christmas Trip: Valkenburg \u0026 Aachen",
       "destination": "Valkenburg",
       "country": "Netherlands",
       "region": "Limburg",
@@ -513,13 +608,20 @@
       "carbonKgEstimate": 48,
       "image": "images/featured-tour/valkenburg-aachen.jpg",
       "heroTitle": "Christmas markets and marlstone caves.",
-      "heroDescription": "A festive two-night trip to Valkenburg's Christmas market in the caves and Aachen's Christmas market, with glühwein and stollen.",
-      "summary": "A Christmas getaway: Valkenburg's underground Christmas market in the marlstone caves and Aachen's historic Christmas market.",
+      "heroDescription": "A festive two-night trip to Valkenburg\u0027s Christmas market in the caves and Aachen\u0027s Christmas market, with glühwein and stollen.",
+      "summary": "A Christmas getaway: Valkenburg\u0027s underground Christmas market in the marlstone caves and Aachen\u0027s historic Christmas market.",
       "highlights": [
         "Valkenburg Christmas market in the caves",
         "Aachen Christmas market",
         "Glühwein and stollen tasting",
         "Festive lights and decorations"
+      ],
+      "gallery": [
+        "/images/tours/valkenburg-aachen-christmas/hero.jpg",
+        "/images/tours/valkenburg-aachen-christmas/valkenburg-cave-market.jpg",
+        "/images/tours/valkenburg-aachen-christmas/aachen-market.jpg",
+        "/images/tours/valkenburg-aachen-christmas/gluhwein.jpg",
+        "/images/tours/valkenburg-aachen-christmas/stollen.jpg"
       ]
     }
   ]

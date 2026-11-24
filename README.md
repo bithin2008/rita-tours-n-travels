@@ -38,3 +38,18 @@ There is no `index.html`: the HTML document is rendered on the server from `src/
 - **Sign-in and gated pages** are not wired in the starter: `src/components/auth/` holds the pages (login, register, password reset, MCP consent) and a login gate for `src/routes/_authed/`, to add when the app needs them. See **Adding Authentication** in `AGENTS.md`.
 - **AI**: TanStack AI is installed and runs on the Base44 AI gateway, with no API key and usage billed to the app's AI credits. `gatewayModel(context.getBase44())` in `src/lib/ai.server.js` builds the adapter; `AGENTS.md` has a streaming chat example (a server route plus `useChat`).
 - **Caching**: the platform caches only what a route opts into via `headers()` (`Cache-Control: public, s-maxage=…`). Everything else is served fresh.
+
+## Tour photo galleries
+
+Tour content is stored in `src/data/featured-tours.json`. Keep the existing `image` as the tour's main photo and add up to 19 extra images in that tour's optional `galleryImages` array. The gallery caps the total at 20 photos. Each entry can be a path under `public/` or a full image URL, with descriptive alt text:
+
+```json
+"galleryImages": [
+  {
+    "src": "images/featured-tour/tour-photo-01.jpg",
+    "alt": "The harbour at sunset"
+  }
+]
+```
+
+The detail page previews five photos; the fifth tile shows the remaining count and opens a lightbox with the complete gallery. Until additional photos are supplied, the main photo repeats to fill the 20 gallery slots.
