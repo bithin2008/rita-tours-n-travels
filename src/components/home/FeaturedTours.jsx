@@ -51,8 +51,8 @@ export default function FeaturedTours({ filters, onClear, onOpen }) {
         </div>
 
         {tours.length ? (
-          <RevealGroup className="mt-6 grid grid-cols-1 items-stretch gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {tours.map((tour) => (
+          <RevealGroup className="mt-6 grid grid-cols-4 gap-5">
+            {tours.slice(0, 4).map((tour) => (
               <TourCard key={tour.id} tour={tour} onOpen={onOpen} />
             ))}
           </RevealGroup>

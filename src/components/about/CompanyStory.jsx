@@ -14,9 +14,9 @@ export default function CompanyStory({ story }) {
               loading="lazy"
             />
           </div>
-          <p className="absolute inset-x-4 bottom-4 rounded-2xl bg-white/92 px-4 py-3 text-[12px] leading-relaxed text-navy/70 backdrop-blur-sm sm:inset-x-6 sm:bottom-6">
+          {/* <p className="absolute inset-x-4 bottom-4 rounded-2xl bg-white/92 px-4 py-3 text-[12px] leading-relaxed text-navy/70 backdrop-blur-sm sm:inset-x-6 sm:bottom-6">
             {story.imageCaption}
-          </p>
+          </p> */}
         </div>
 
         <div>

@@ -92,7 +92,7 @@ export default function SiteHeader() {
         <Logo light={overHero} />
 
         <nav aria-label="Main navigation" className="hidden items-center gap-6 xl:flex">
-          {settings.navigation.map((item) => {
+          {settings.navigation.filter((item) => !item.hidden).map((item) => {
             const active = isPathActive(pathname, item.to);
             return (
               <Link
@@ -173,7 +173,7 @@ export default function SiteHeader() {
               </SheetHeader>
               <div className="flex h-[calc(100%-84px)] flex-col overflow-y-auto px-6 py-6">
                 <nav aria-label="Mobile navigation" className="flex flex-col">
-                  {settings.navigation.map((item) => {
+                  {settings.navigation.filter((item) => !item.hidden).map((item) => {
                     const active = isPathActive(pathname, item.to);
                     return (
                       <Link

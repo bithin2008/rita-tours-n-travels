@@ -4,31 +4,31 @@
       "id": "maastricht-day-night",
       "destination": "Maastricht, Netherlands",
       "title": "One city, two lights",
-      "caption": "The same Vrijthof square at midday and at sunset — the view barely changes, the feeling does entirely.",
-      "beforeImage": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/e150378d1_generated_624aa144.jpg",
-      "afterImage": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/bf1b14139_generated_defda7f7.png",
-      "beforeLabel": "Midday",
+      "caption": "The same cityscape of Maastricht's Vrijthof square at sunrise and sunset.",
+      "beforeImage": "images/comparison/maastricht-01.png",
+      "afterImage": "images/comparison/maastricht-02.png",
+      "beforeLabel": "Sunrise",
       "afterLabel": "Sunset"
     },
     {
-      "id": "valkenburg-seasons",
-      "destination": "Valkenburg, Netherlands",
-      "title": "One valley, two seasons",
-      "caption": "The same marlstone cave entrance in summer green and under winter frost.",
-      "beforeImage": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/473f28698_generated_43fd33dc.png",
-      "afterImage": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/4ca6b020b_generated_215f6f69.png",
-      "beforeLabel": "Summer",
-      "afterLabel": "Winter"
+      "id": "kinderdijk-hours",
+      "destination": "Kinderdijk, Netherlands",
+      "title": "One windmill, two hours",
+      "caption": "The same windmill at Kinderdijk in the Netherlands, photographed two hours apart.",
+      "beforeImage": "images/comparison/kinderdijk-01.png",
+      "afterImage": "images/comparison/kinderdijk-02.png",
+      "beforeLabel": "7:00 AM",
+      "afterLabel": "5:00 PM"
     },
     {
-      "id": "antwerp-hours",
-      "destination": "Antwerp, Belgium",
-      "title": "One terrace, two hours",
-      "caption": "Morning calm and evening lamps over the same stretch of Antwerp's Grote Markt.",
-      "beforeImage": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/9ca45acdf_generated_edb7ae85.png",
-      "afterImage": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/32951fe5c_generated_b6ccbf3c.png",
-      "beforeLabel": "Morning",
-      "afterLabel": "Evening"
+      "id": "ramsau-seasons",
+      "destination": "Berchtesgaden, Germany",
+      "title": "One village, two seasons",
+      "caption": "The same alpine village of Ramsau in summer and winter.",
+      "beforeImage": "images/comparison/ramsau-01.png",
+      "afterImage": "images/comparison/ramsau-02.png",
+      "beforeLabel": "Summer",
+      "afterLabel": "Winter"
     }
   ]
 }

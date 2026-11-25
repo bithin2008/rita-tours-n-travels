@@ -7,50 +7,50 @@ const collageImages = [
   {
     src: "/images/collage/amsterdam.jpg",
     alt: "Amsterdam canals and narrow historic houses at golden hour",
-    label: "Amsterdam",
-    theme: "History",
+    label: "Amsterdam, Netherlands",
+    theme: "Canal Photography",
   },
   {
-    src: "/images/collage/paris.jpg",
-    alt: "Parisian café culture and cobblestone streets",
-    label: "Paris",
-    theme: "Culture",
+    src: "/images/collage/leiden.jpg",
+    alt: "Leiden historic architecture and canal views",
+    label: "Leiden, Netherlands",
+    theme: "Dutch Windmills",
   },
   {
-    src: "/images/collage/amalfi-coast.jpg",
-    alt: "Amalfi Coast pastel villages and lemon groves",
-    label: "Amalfi Coast",
-    theme: "History",
+    src: "/images/collage/berchtesgaden.jpg",
+    alt: "Berchtesgaden snow-capped mountains and alpine lakes",
+    label: "Berchtesgaden, Germany",
+    theme: "Mountain Panorama",
   },
   {
-    src: "/images/collage/barcelona.jpg",
-    alt: "Spanish tapas and Mediterranean seafood on rustic wood",
-    label: "Barcelona",
-    theme: "Food",
+    src: "/images/collage/allianz-arena.jpg",
+    alt: "Allianz Arena football stadium in Munich, Germany",
+    label: "Munich, Germany",
+    theme: "Illuminated Exterior",
   },
   {
-    src: "/images/collage/santorini.jpg",
-    alt: "Santorini white-washed buildings with blue domes",
-    label: "Santorini",
-    theme: "Culture",
+    src: "/images/collage/giethoorn.jpg",
+    alt: "Giethoorn canal town with thatched-roof houses",
+    label: "Giethoorn, Netherlands",
+    theme: "Thatched Cottages",
   },
   {
-    src: "/images/collage/tuscany.jpg",
-    alt: "Tuscan vineyard rolling hills cypress trees",
-    label: "Tuscany",
-    theme: "Food",
+    src: "/images/collage/esch-sur-sure.jpg",
+    alt: "Esch-sur-Sure historic architecture and river views",
+    label: "Esch-sur-Sure, Luxembourg",
+    theme: "Medieval Village",
   },
   {
-    src: "/images/collage/vienna.jpg",
-    alt: "Vienna historic palace architecture gardens",
-    label: "Vienna",
-    theme: "Culture",
+    src: "/images/collage/dinant.jpg",
+    alt: "Dinant historic castle and river views",
+    label: "Dinant, Belgium",
+    theme: "Limestone Caves",
   },
   {
-    src: "/images/collage/prague.jpg",
-    alt: "Prague Charles Bridge old town spires at dusk",
-    label: "Prague",
-    theme: "History",
+    src: "/images/collage/utrecht.jpg",
+    alt: "Utrecht historic architecture and canal views",
+    label: "Utrecht, Netherlands",
+    theme: "Historic Architecture",
   },
 ];
 
@@ -81,14 +81,14 @@ export default function EuropeanCollage() {
               onClick={() => openLightbox(item)}
             >
               <div className="aspect-[3/4] relative overflow-hidden">
-              <Image
-                src={item.src}
-                alt={item.alt}
-                fill
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                className="object-cover object-center transition-transform duration-700 ease-out pointer-events-none"
-                loading="lazy"
-              />
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover object-center transition-transform duration-700 ease-out pointer-events-none"
+                  loading="lazy"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,31,68,0.85)] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6 sm:p-8 z-10 pointer-events-none">
                   <div>
                     <span className="inline-block rounded-full bg-white px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-navy/80">

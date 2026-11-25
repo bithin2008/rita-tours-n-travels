@@ -5,7 +5,11 @@
       "name": "Netherlands",
       "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/bf1b14139_generated_defda7f7.png",
       "description": "Canals, windmills and flat cycling routes. From Amsterdam's museums to Limburg's marlstone hills, the Netherlands rewards slow exploration by train and bike.",
-      "experiences": ["Canal walks", "Windmill villages", "Cheese markets"],
+      "experiences": [
+        "Canal walks",
+        "Windmill villages",
+        "Cheese markets"
+      ],
       "bestSeason": "April to October",
       "featuredTourId": "amsterdam-delft-denhaag-rotterdam"
     },
@@ -14,7 +18,11 @@
       "name": "Belgium",
       "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/fba556980_generated_213d5635.png",
       "description": "Medieval towers, canal reflections and chocolate shops. Bruges, Ghent and Antwerp are easy day trips from Amsterdam by train.",
-      "experiences": ["Medieval city walks", "Chocolate and waffle tastings", "Canal boat tours"],
+      "experiences": [
+        "Medieval city walks",
+        "Chocolate and waffle tastings",
+        "Canal boat tours"
+      ],
       "bestSeason": "April to October, December for Christmas markets",
       "featuredTourId": "bruges-day-trip"
     },
@@ -23,9 +31,26 @@
       "name": "Germany",
       "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/c51cb5c58_generated_c7c83982.png",
       "description": "Cathedrals, thermal springs and Christmas markets. Aachen on the Dutch border is a short day trip from Maastricht.",
-      "experiences": ["Cathedral tours", "Spa springs", "Christmas markets"],
+      "experiences": [
+        "Cathedral tours",
+        "Spa springs",
+        "Christmas markets"
+      ],
       "bestSeason": "May to September, December for Christmas markets",
       "featuredTourId": "aachen-germany"
+    },
+    {
+      "id": "luxembourg",
+      "name": "Luxembourg",
+      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/4ca6b020b_generated_215f6f69.png",
+      "description": "Castles, rivers and rolling hills. Luxembourg City is a short train ride from Maastricht, and the countryside is perfect for a day of hiking.",
+      "experiences": [
+        "Castle tours",
+        "River walks",
+        "Hiking trails"
+      ],
+      "bestSeason": "April to October",
+      "featuredTourId": "valkenburg-aachen-christmas"
     }
   ]
 }

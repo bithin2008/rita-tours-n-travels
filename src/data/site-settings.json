@@ -39,7 +39,8 @@
     {
       "label": "Testimonials",
       "labelKey": "nav.testimonials",
-      "to": "/testimonials"
+      "to": "/testimonials",
+      "hidden": true
     },
     {
       "label": "Jobs",
