@@ -89,7 +89,7 @@ export function autoReplyTemplate({ name, topic, first_name, tour_title, destina
             <tr><td style="padding:28px 34px 32px 34px;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
                 <td align="left" bgcolor="#1f69ff" style="border-radius:26px; background-color:#1f69ff;">
-                  <a href="https://rita-journey-flow.base44.app/tours" style="display:inline-block; padding:15px 32px; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:14px; font-weight:600; color:#ffffff; border-radius:26px;">Explore journeys</a>
+                  <a href="${SITE_URL}/tours" style="display:inline-block; padding:15px 32px; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:14px; font-weight:600; color:#ffffff; border-radius:26px;">Explore journeys</a>
                 </td>
               </tr></tbody></table>
               <div style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:12.5px; line-height:20px; color:#6b7f9e; padding-top:14px;">Want to add dates or travellers? Simply reply to this email, we read every response.</div>
