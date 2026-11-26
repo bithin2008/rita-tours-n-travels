@@ -62,9 +62,8 @@ export function autoReplyTemplate({ name, topic, first_name, tour_title, destina
                 <td align="left" valign="middle" style="width:46px;"><img src="${LOGO_IMAGE}" width="40" height="40" alt="RITA Tours N Travels" style="width:40px; height:40px; border-radius:12px;"></td>
                 <td align="left" valign="middle" style="padding-left:11px;">
                   <div style="font-family:'Poppins','Segoe UI',Arial,sans-serif; font-size:16.5px; font-weight:700; color:#0a1f44;">RITA Tours N Travels</div>
-                  <div style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:9.5px; font-weight:700; color:#1f69ff; letter-spacing:2.1px; text-transform:uppercase; padding-top:4px;">Curated European Journeys</div>
                 </td>
-                <td align="right" valign="middle" style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:10.5px; color:#93a5c0; white-space:nowrap;">Since 2009</td>
+                <td align="right" valign="middle" style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:10.5px; color:#93a5c0; white-space:nowrap;">Since 2026</td>
               </tr></tbody></table>
             </td></tr>
             <tr><td style="padding:0; background-color:#0a1f44; line-height:0;"><img src="${hero}" width="600" height="252" alt="${dest}" style="width:100%; max-width:600px; height:252px; object-fit:cover;"></td></tr>
@@ -79,8 +78,8 @@ export function autoReplyTemplate({ name, topic, first_name, tour_title, destina
                 <tbody><tr>
                   <td style="width:3px; background-color:#1f69ff; border-radius:18px 0 0 18px; font-size:0; line-height:0;">&nbsp;</td>
                   <td style="padding:20px 22px;">
-                    <div style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:9.5px; font-weight:700; letter-spacing:2.1px; text-transform:uppercase; color:#1f69ff; padding-bottom:8px;">Your enquiry</div>
-                    <div style="font-family:'Poppins','Segoe UI',Arial,sans-serif; font-size:17px; line-height:23px; font-weight:600; color:#0a1f44;">${title}</div>
+                    <div style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:9.5px; font-weight:700; letter-spacing:2.1px; text-transform:uppercase; color:#1f69ff; padding-bottom:8px;">${title}</div>
+                    
                     <div style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:12.5px; line-height:19px; color:#6b7f9e; padding-top:4px;">${dest}</div>
                     <div style="border-top:1px solid #e6ecf6; margin:16px 0 14px 0; font-size:0; line-height:0;">&nbsp;</div>
                     <div style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:13.5px; line-height:23px; color:#3f5578; word-break:break-word;">${msg}</div>

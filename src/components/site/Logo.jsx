@@ -3,7 +3,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 const RITA_LOGO_URL =
-  "https://base44.app/api/apps/6aec6c41ac98455faf00216e/files/mp/public/6aec6c41ac98455faf00216e/d952b67e9_rita-logo-final.jpg";
+  "images/logo.jpg";
 
 /**
  * Official RITA Tours N Travels logo — the circular R badge with compass,
