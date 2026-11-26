@@ -125,7 +125,7 @@ export default function StepPreferences({ data, moods, onChange }) {
               <input
                 id="planning-budget"
                 type="range"
-                min={600}
+                min={100}
                 max={6000}
                 step={100}
                 value={data.budget}
@@ -136,7 +136,7 @@ export default function StepPreferences({ data, moods, onChange }) {
                 }}
               />
               <div className="mt-2.5 flex justify-between text-[10.5px] font-medium text-navy/40">
-                <span>€600</span>
+                <span>€100</span>
                 <span>€6,000</span>
               </div>
             </div>

@@ -62,7 +62,7 @@ body, table, td, a { -webkit-font-smoothing: antialiased; }
                 <div class="brand-name" style="font-family:'Poppins','Segoe UI',Arial,sans-serif; font-size:16.5px; font-weight:700; color:#0a1f44;">RITA Tours N Travels</div>
                 
               </td>
-              <td align="right" valign="middle" class="hide-sm" style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:10px; font-weight:700; letter-spacing:1.6px; text-transform:uppercase; color:#0a1f44; background-color:#f0f5ff; border-radius:20px; padding:7px 12px; white-space:nowrap;">New enquiry</td>
+              <td align="center" valign="middle" class="hide-sm" style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:10px; font-weight:700; letter-spacing:1.6px; text-transform:uppercase; color:#0a1f44; background-color:#f0f5ff; border-radius:20px; padding:7px 12px; white-space:nowrap;">${dest}</td>
             </tr></tbody></table>
           </td></tr>
           <tr><td style="padding:0; background-color:#0a1f44; line-height:0;"><img class="hero" src="${hero}" width="600" height="230" alt="${ttitle}" style="width:100%; max-width:600px; height:230px; object-fit:cover;"></td></tr>
@@ -70,7 +70,7 @@ body, table, td, a { -webkit-font-smoothing: antialiased; }
             <div style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:9.5px; font-weight:700; letter-spacing:2.1px; text-transform:uppercase; color:#19c3b1; padding-bottom:7px;">Journey of interest</div>
             <div class="band-title" style="font-family:'Poppins','Segoe UI',Arial,sans-serif; font-size:21px; line-height:27px; font-weight:600; color:#ffffff; letter-spacing:-0.2px;">${ttitle}</div>
             <div style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:12.5px; line-height:19px; color:#9fb0cc; padding-top:5px;">${dest}</div>
-            ${type ? `<div style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:12.5px; line-height:19px; color:#9fb0cc; padding-top:3px;">Type: ${type}</div>` : ""}
+            
           </td></tr>
           <tr><td style="padding:30px 34px 0 34px;" class="pad">
             <div class="h1" style="font-family:'Poppins','Segoe UI',Arial,sans-serif; font-size:27px; line-height:34px; font-weight:700; color:#0a1f44; letter-spacing:-0.5px;">${name} wants to know more</div>
@@ -84,10 +84,6 @@ body, table, td, a { -webkit-font-smoothing: antialiased; }
                   <td class="row-value" style="padding:14px 0 4px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:14px; font-weight:600; color:#0a1f44;">${name}</td></tr>
                   <tr><td class="row-label" style="padding:4px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:9.5px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#93a5c0; width:38%;">Email</td>
                   <td class="row-value" style="padding:4px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:14px; color:#1f69ff; word-break:break-word;"><a href="mailto:${email}" style="color:#1f69ff;">${email}</a></td></tr>
-                  <tr><td class="row-label" style="padding:4px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:9.5px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#93a5c0; width:38%;">Journey</td>
-                  <td class="row-value" style="padding:4px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:14px; color:#0a1f44;">${ttitle}</td></tr>
-                  <tr><td class="row-label" style="padding:4px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:9.5px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#93a5c0; width:38%;">Destination</td>
-                  <td class="row-value" style="padding:4px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:14px; color:#0a1f44;">${dest}</td></tr>
                   ${type ? `<tr><td class="row-label" style="padding:4px 0 12px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:9.5px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#93a5c0; width:38%;">Tour type</td>
                   <td class="row-value" style="padding:4px 0 12px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:14px; color:#0a1f44;">${type}</td></tr>` : `<tr><td style="padding:4px 0 12px 0;"></td><td style="padding:4px 0 12px 0;"></td></tr>`}
                 </tbody></table>
@@ -190,7 +186,7 @@ export function autoReplyTemplate({ name, topic, first_name, tour_title, destina
             <tr><td style="padding:28px 34px 32px 34px;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
                 <td align="left" bgcolor="#1f69ff" style="border-radius:26px; background-color:#1f69ff;">
-                  <a href="https://rita-journey-flow.base44.app/tours" style="display:inline-block; padding:15px 32px; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:14px; font-weight:600; color:#ffffff; border-radius:26px;">Explore journeys</a>
+                  <a href="${SITE_URL}/tours" style="display:inline-block; padding:15px 32px; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:14px; font-weight:600; color:#ffffff; border-radius:26px;">Explore journeys</a>
                 </td>
               </tr></tbody></table>
               <div style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:12.5px; line-height:20px; color:#6b7f9e; padding-top:14px;">Want to add dates or travellers? Simply reply to this email, we read every response.</div>

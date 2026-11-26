@@ -21,11 +21,10 @@ const destinations = getDestinationOptions()
 const moods = getMoods();
 const STEPS = ["Trip basics", "Style & budget", "Your details"];
 const PACE_LABELS = { slow: "Slow — long stays", balanced: "Balanced", full: "Full — see everything" };
-const FLEX_LABELS = { fixed: "fixed dates", flexible: "flexible dates", month: "month only" };
+const FLEX_LABELS = { fixed: "fixed dates", flexible: "flexible dates" };
 
 const emptyForm = {
   destination: "",
-  month: "",
   startDate: "",
   endDate: "",
   flexibility: "flexible",
@@ -42,16 +41,8 @@ const emptyForm = {
   consent: false,
 };
 
-function formatMonth(value) {
-  if (!value) return "";
-  const date = new Date(`${value}-01T00:00:00Z`);
-  if (Number.isNaN(date.getTime())) return value;
-  return new Intl.DateTimeFormat("en-GB", { month: "long", year: "numeric", timeZone: "UTC" }).format(date);
-}
-
 function buildRecap(data) {
   const when = [
-    formatMonth(data.month),
     data.startDate ? `${data.startDate}${data.endDate ? ` → ${data.endDate}` : ""}` : "",
     FLEX_LABELS[data.flexibility],
   ]

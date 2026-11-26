@@ -46,7 +46,12 @@ export default function StepTripBasics({ data, destinations, onChange, error }) 
       </div>
 
       <div className="mt-7 grid gap-5 sm:grid-cols-2">
-        <Field label="Destination" htmlFor="planning-destination" hint="City, region or country — or pick undecided.">
+        <Field
+          label="Destination"
+          htmlFor="planning-destination"
+          hint="City, region or country — or pick undecided."
+          className="sm:col-span-2"
+        >
           <SelectInput
             id="planning-destination"
             icon={MapPin}
@@ -62,16 +67,6 @@ export default function StepTripBasics({ data, destinations, onChange, error }) 
             <option value="Undecided">Somewhere in Europe — undecided</option>
             <option value="Elsewhere">Somewhere else entirely</option>
           </SelectInput>
-        </Field>
-
-        <Field label="Travel month or date" htmlFor="planning-month" hint="An approximate month is enough for now.">
-          <CalendarField
-            id="planning-month"
-            mode="month"
-            value={data.month}
-            placeholder="Choose a month"
-            onChange={(month) => onChange({ month })}
-          />
         </Field>
 
         <Field label="Arrive" htmlFor="planning-start">
@@ -103,7 +98,6 @@ export default function StepTripBasics({ data, destinations, onChange, error }) 
           {[
             { value: "fixed", label: "Dates are fixed" },
             { value: "flexible", label: "Dates are flexible" },
-            { value: "month", label: "Only the month is set" },
           ].map((option) => (
             <Chip
               key={option.value}
