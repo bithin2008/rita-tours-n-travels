@@ -1,8 +1,8 @@
 const SITE_NAME = "RITA Tours N Travels";
 const SITE_URL = process.env.NEXT_PUBLIC_BASE44_APP_BASE_URL || "https://rita-tours-n-travels.vercel.app";
 const SUPPORT_EMAIL = "noreply.ritatravel@gmail.com";
-const HERO_IMAGE = "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80";
-const LOGO_IMAGE = "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/c90b0b8bb_logo.png";
+const HERO_IMAGE = "hhttps://rita-tours-n-travels.vercel.app/images/email-template/banner-01.jpg";
+const LOGO_IMAGE = "https://rita-tours-n-travels.vercel.app/images/logo.jpg";
 
 // (base styles omitted; enquiry notification uses simplified template below)
 
