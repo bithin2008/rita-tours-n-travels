@@ -1,7 +1,7 @@
 const SITE_NAME = "RITA Tours N Travels";
 const SITE_URL = process.env.NEXT_PUBLIC_BASE44_APP_BASE_URL || "https://rita-tours-n-travels.vercel.app";
 const SUPPORT_EMAIL = "noreply.ritatravel@gmail.com";
-const HERO_IMAGE = "hhttps://rita-tours-n-travels.vercel.app/images/email-template/banner-01.jpg";
+const HERO_IMAGE = "https://rita-tours-n-travels.vercel.app/images/email-template/banner-01.jpg";
 const LOGO_IMAGE = "https://rita-tours-n-travels.vercel.app/images/logo.jpg";
 
 // (base styles omitted; enquiry notification uses simplified template below)
@@ -78,9 +78,7 @@ export function autoReplyTemplate({ name, topic, first_name, tour_title, destina
                 <tbody><tr>
                   <td style="width:3px; background-color:#1f69ff; border-radius:18px 0 0 18px; font-size:0; line-height:0;">&nbsp;</td>
                   <td style="padding:20px 22px;">
-                    <div style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:9.5px; font-weight:700; letter-spacing:2.1px; text-transform:uppercase; color:#1f69ff; padding-bottom:8px;">${title}</div>
-                    
-                    <div style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:12.5px; line-height:19px; color:#6b7f9e; padding-top:4px;">${dest}</div>
+                    <div style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:9.5px; font-weight:700; letter-spacing:2.1px; text-transform:uppercase; color:#1f69ff; padding-bottom:8px;">${dest}</div>
                     <div style="border-top:1px solid #e6ecf6; margin:16px 0 14px 0; font-size:0; line-height:0;">&nbsp;</div>
                     <div style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:13.5px; line-height:23px; color:#3f5578; word-break:break-word;">${msg}</div>
                   </td>
