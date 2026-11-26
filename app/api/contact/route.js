@@ -4,7 +4,7 @@ import { enquiryNotificationTemplate, autoReplyTemplate } from "@/lib/email-temp
 export async function POST(request) {
   try {
     const body = await request.json();
-    const { name, email, topic, message, language, currency } = body;
+    const { name, email, topic, message, language, currency, journeyType } = body;
 
     if (!name || !email || !message) {
       return new Response(JSON.stringify({ error: "Missing required fields" }), {
@@ -44,7 +44,7 @@ export async function POST(request) {
       to: toEmail,
       subject: `New enquiry: ${topic}`,
       text: `Name: ${name}\nEmail: ${email}\nTopic: ${topic}\nLanguage: ${language || "en"}\nCurrency: ${currency || "EUR"}\n\nMessage:\n${message}`,
-      html: enquiryNotificationTemplate({ name, email, topic, message, language, currency }),
+      html: enquiryNotificationTemplate({ name, email, topic, message, language, currency, tour_type: journeyType }),
     });
 
     // Auto-reply to the visitor
