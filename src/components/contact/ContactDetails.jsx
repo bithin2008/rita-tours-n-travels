@@ -28,7 +28,11 @@ function InfoRow({ icon: Icon, label, value, href, tone = "electric" }) {
 export default function ContactDetails() {
   const { settings } = useApp();
   const { brand, social } = settings;
-  const whatsappHref = `https://wa.me/${brand.whatsapp}?text=${encodeURIComponent("Hello RITA, I would like to plan a journey.")}`;
+  const message =
+    "Welcome to RITA Tours N Travels!" +
+    "Discover new destinations, create beautiful memories, and travel with confidence.";
+
+  const whatsappHref = `https://wa.me/${brand.whatsapp}?text=${encodeURIComponent(message)}`;
 
   return (
     <div>

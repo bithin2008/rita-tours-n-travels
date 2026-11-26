@@ -53,7 +53,7 @@ export async function POST(request) {
       to: email,
       subject: "We received your message — RITA Tours N Travels",
       text: `Hi ${name},\n\nThank you for reaching out to RITA Tours N Travels. We've received your enquiry about "${topic}" and will get back to you within one business day.\n\nBest regards,\nThe RITA team`,
-      html: autoReplyTemplate({ name, topic }),
+      html: autoReplyTemplate({ name, topic, message }),
     });
 
     return new Response(JSON.stringify({ success: true }), {

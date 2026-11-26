@@ -11,7 +11,7 @@ const TOPICS = [
   "Existing booking"
 ];
 
-const EMPTY = { name: "", email: "", topic: TOPICS[0], message: "", consent: false };
+const EMPTY = { name: "", email: "", topic: TOPICS[0], journeyType: "", message: "", consent: false };
 
 export default function ContactForm() {
   const { language, currency } = useApp();
@@ -41,8 +41,9 @@ export default function ContactForm() {
         name: form.name,
         email: form.email,
         message: form.message,
-        topic: form.topic,
-        consent: true,
+         topic: form.topic,
+         journeyType: form.topic === TOPICS[0] ? form.journeyType : undefined,
+         consent: true,
         source: "contact",
         language,
         currency,
@@ -54,8 +55,9 @@ export default function ContactForm() {
         body: JSON.stringify({
           name: form.name.trim(),
           email: form.email.trim(),
-          topic: form.topic,
-          message: form.message.trim(),
+           topic: form.topic,
+           journeyType: form.topic === TOPICS[0] ? form.journeyType : undefined,
+           message: form.message.trim(),
           language,
           currency,
         }),
@@ -128,7 +130,7 @@ export default function ContactForm() {
           <SelectInput
             id="contact-topic"
             value={form.topic}
-            onChange={(event) => update({ topic: event.target.value })}
+            onChange={(event) => update({ topic: event.target.value, journeyType: "" })}
           >
             {TOPICS.map((topic) => (
               <option key={topic} value={topic}>
@@ -137,6 +139,26 @@ export default function ContactForm() {
             ))}
           </SelectInput>
         </Field>
+
+        {form.topic === TOPICS[0] ? (
+          <Field label="Tour type" htmlFor="contact-journey-type" className="sm:col-span-2">
+            <div className="flex flex-wrap gap-4 pt-1">
+              {["Personalized Tour", "Customized Tour"].map((opt) => (
+                <label key={opt} className="inline-flex cursor-pointer items-center gap-2 text-[13px] text-navy/70">
+                  <input
+                    type="radio"
+                    name="journeyType"
+                    value={opt}
+                    checked={form.journeyType === opt}
+                    onChange={(event) => update({ journeyType: event.target.value })}
+                    className="h-[16px] w-[16px] cursor-pointer accent-[#1E6BFF]"
+                  />
+                  {opt}
+                </label>
+              ))}
+            </div>
+          </Field>
+        ) : null}
 
         <Field label="Message" htmlFor="contact-message" className="sm:col-span-2">
           <TextArea

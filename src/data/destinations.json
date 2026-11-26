@@ -3,7 +3,7 @@
     {
       "id": "netherlands",
       "name": "Netherlands",
-      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/bf1b14139_generated_defda7f7.png",
+      "image": "images/destination-explorer/image-01.jpg",
       "description": "Canals, windmills and flat cycling routes. From Amsterdam's museums to Limburg's marlstone hills, the Netherlands rewards slow exploration by train and bike.",
       "experiences": [
         "Canal walks",
@@ -16,7 +16,7 @@
     {
       "id": "belgium",
       "name": "Belgium",
-      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/fba556980_generated_213d5635.png",
+      "image": "images/destination-explorer/image-02.jpg",
       "description": "Medieval towers, canal reflections and chocolate shops. Bruges, Ghent and Antwerp are easy day trips from Amsterdam by train.",
       "experiences": [
         "Medieval city walks",
@@ -29,7 +29,7 @@
     {
       "id": "germany",
       "name": "Germany",
-      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/c51cb5c58_generated_c7c83982.png",
+      "image": "images/destination-explorer/image-03.jpg",
       "description": "Cathedrals, thermal springs and Christmas markets. Aachen on the Dutch border is a short day trip from Maastricht.",
       "experiences": [
         "Cathedral tours",
@@ -42,15 +42,15 @@
     {
       "id": "luxembourg",
       "name": "Luxembourg",
-      "image": "https://media.base44.com/images/public/6aec6c41ac98455faf00216e/4ca6b020b_generated_215f6f69.png",
-      "description": "Castles, rivers and rolling hills. Luxembourg City is a short train ride from Maastricht, and the countryside is perfect for a day of hiking.",
+      "image": "images/destination-explorer/image-04.jpg",
+      "description": "Castles, forests and river valleys. Luxembourg City is a UNESCO World Heritage site, and the Moselle wine region is a short train ride away.",
       "experiences": [
         "Castle tours",
         "River walks",
         "Hiking trails"
       ],
       "bestSeason": "April to October",
-      "featuredTourId": "valkenburg-aachen-christmas"
+      "featuredTourId": "luxembourg-city-day-trip"
     }
   ]
 }

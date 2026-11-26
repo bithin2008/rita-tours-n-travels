@@ -12,7 +12,7 @@ const AUTOPLAY_MS = 5000;
 
 export default function Hero({ onSearch, onOpenTour }) {
   const { t, currency } = useApp();
-  const slides = getTourList();
+  const slides = getTourList().slice(0, 4);
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
   const reduced = useReducedMotion();

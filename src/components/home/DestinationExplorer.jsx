@@ -54,13 +54,13 @@ export default function DestinationExplorer({ onOpenTour }) {
 
           <div className="lg:col-span-8">
             <div key={active.id} className="animate-fade overflow-hidden rounded-[24px] bg-white soft-shadow">
-              <div className="relative aspect-[16/9] w-full overflow-hidden">
-                <Image
-                  src={active.image}
-                  alt={`${active.name} — travel photography`}
-                  className="h-full w-full object-cover"
-                  loading="lazy"
-                />
+            <div className="relative w-full overflow-hidden">
+              <Image
+                src={active.image}
+                alt={`${active.name} — travel photography`}
+                className="w-full object-contain"
+                loading="lazy"
+              />
                 <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-navy/70 via-transparent to-transparent" />
                 <h3 className="absolute bottom-5 left-6 font-heading text-[26px] font-semibold text-white">
                   {active.name}

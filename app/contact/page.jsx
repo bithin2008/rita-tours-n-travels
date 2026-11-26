@@ -21,8 +21,8 @@ export default function ContactPage() {
       <main>
         <PageHero
           eyebrow="Contact"
-          title="Talk to the people who plan the trips"
-          subtitle="No call centre, no ticket queue. Tell us what you are dreaming of and the planner who would build it replies — usually the same day."
+          title="Let's plan your next adventure together"
+          subtitle="Have questions about pickup points, group bookings, or the itinerary? Message us directly and let's get your seats reserved."
           image="images/contact-banner.jpg"
           imageAlt="Canal houses in Amsterdam at golden hour"
         />

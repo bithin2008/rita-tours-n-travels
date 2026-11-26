@@ -9,6 +9,7 @@ import { useApp } from "@/lib/AppContext";
 export default function PhotoStories() {
   const { t } = useApp();
   const { items, note } = getPhotoStories();
+  const stories = items.slice(0, 4);
 
   return (
     <section id="photo-stories" className="section scroll-mt-24 bg-cloud">
@@ -28,8 +29,8 @@ export default function PhotoStories() {
           </Link>
         </div>
 
-        <div className="mt-10 columns-1 gap-4 sm:columns-2 lg:columns-3 [&>*]:mb-4">
-          {items.map((story) => (
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {stories.map((story) => (
             <Link
               key={story.id}
               href="/testimonials"
@@ -58,7 +59,7 @@ export default function PhotoStories() {
           ))}
         </div>
 
-        <p className="mt-5 text-[11.5px] leading-relaxed text-navy/45">{note}</p>
+        {/* <p className="mt-5 text-[11.5px] leading-relaxed text-navy/45">{note}</p> */}
       </div>
     </section>
   );
