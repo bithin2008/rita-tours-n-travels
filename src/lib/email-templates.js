@@ -3,7 +3,7 @@ import featuredTours from "../data/featured-tours.json";
 const SITE_NAME = "RITA Tours N Travels";
 const SITE_URL = process.env.NEXT_PUBLIC_BASE44_APP_BASE_URL || "https://rita-tours-n-travels.vercel.app";
 const SUPPORT_EMAIL = "noreply.ritatravel@gmail.com";
-const HERO_IMAGE = "hhttps://rita-tours-n-travels.vercel.app/images/email-template/banner-01.jpg";
+const HERO_IMAGE = "https://rita-tours-n-travels.vercel.app/images/email-template/banner-01.jpg";
 const LOGO_IMAGE = "https://rita-tours-n-travels.vercel.app/images/logo.jpg";
 
 export function enquiryNotificationTemplate({ name, email, topic, message, language, currency }) {
