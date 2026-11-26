@@ -32,7 +32,7 @@ export default function CompanyStory({ story }) {
 
           <div className="mt-8 flex items-center gap-3 border-t border-navy/10 pt-6">
             <span className="grid h-11 w-11 place-items-center rounded-full bg-navy font-heading text-[13px] font-semibold text-white">
-              RV
+              JC
             </span>
             <div>
               <p className="font-heading text-[14px] font-semibold text-navy">{story.signature}</p>

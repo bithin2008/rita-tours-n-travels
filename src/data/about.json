@@ -2,7 +2,7 @@
   "hero": {
     "eyebrow": "About us",
     "title": "We explore the heart of Europe, one day at a time.",
-    "subtitle": "RITA Tours N Travels is an EU-registered travel studio based in the Netherlands. We craft immersive day journeys—starting right here in the Dutch and Benelux regions—connecting you with authentic food, deep local history, and a real person behind every itinerary.",
+    "subtitle": "RITA Tours N Travels is an EU-registered travel studio crafting immersive day journeys—connecting you with authentic food, deep local history, and a real person behind every itinerary.",
     "image": "images/about-banner.jpg",
     "imageAlt": "Lakeside villas and mountains on Lake Como at golden hour",
     "stats": [
@@ -78,14 +78,14 @@
         "role": "Founder & Tour Planner",
         "base": "Amsterdam, NL",
         "focus": "Started RITA after a decade guiding in Italy. Still plans every Amalfi and Lake Como journey herself.",
-        "initials": "RV"
+        "initials": "JC"
       },
       {
         "name": "Abhishek Chowdhury",
         "role": "Co-Founder",
         "base": "Amsterdam, NL",
         "focus": "Routes, refuges and snow-line timing across the Alps. Knows which ridge walks work with a nine-year-old.",
-        "initials": "TF"
+        "initials": "AC"
       }
     ]
   },

@@ -14,7 +14,7 @@ const settings = getSiteSettings();
 export const metadata = {
   title: "About Us — RITA Tours N Travels",
   description:
-    "The RITA story: an Amsterdam-based European travel studio, the people who plan your journey, and our sustainability commitments.",
+    "RITA Tours N Travels is an EU-registered travel studio crafting immersive day journeys—connecting you with authentic food, deep local history, and a real person behind every itinerary.",
   openGraph: {
     title: "About RITA Tours N Travels",
     description: settings.brand.description,
