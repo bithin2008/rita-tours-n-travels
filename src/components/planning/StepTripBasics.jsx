@@ -74,6 +74,7 @@ export default function StepTripBasics({ data, destinations, onChange, error }) 
             id="planning-start"
             value={data.startDate}
             placeholder="Arrival date"
+            minDateFromTomorrow
             onChange={(startDate) => onChange({ startDate })}
           />
         </Field>
@@ -83,6 +84,7 @@ export default function StepTripBasics({ data, destinations, onChange, error }) 
             id="planning-end"
             value={data.endDate}
             minDate={data.startDate}
+            minDateFromTomorrow={!data.startDate}
             placeholder="Departure date"
             onChange={(endDate) => onChange({ endDate })}
           />

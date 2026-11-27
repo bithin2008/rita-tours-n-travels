@@ -63,8 +63,9 @@ export default function StepContact({ data, onChange, recap, error, status, onSu
             id="planning-phone"
             icon={Phone}
             value={data.phone}
-            onChange={(event) => onChange({ phone: event.target.value })}
+            onChange={(event) => onChange({ phone: event.target.value.replace(/[^0-9+]/g, "") })}
             autoComplete="tel"
+            maxLength={16}
           />
         </Field>
       </div>

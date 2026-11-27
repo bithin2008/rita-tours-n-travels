@@ -80,7 +80,7 @@ export default function Hero({ onSearch, onOpenTour }) {
 
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-[linear-gradient(100deg,rgba(10,31,68,0.88)_0%,rgba(10,31,68,0.62)_45%,rgba(10,31,68,0.35)_70%,rgba(10,31,68,0.55)_100%)]"
+        className="absolute inset-0 bg-[linear-gradient(100deg,rgba(10,31,68,0.98)_0%,rgba(10,31,68,0.85)_45%,rgba(10,31,68,0.6)_70%,rgba(10,31,68,0.75)_100%)]"
       />
       <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-navy/80 to-transparent" />
 

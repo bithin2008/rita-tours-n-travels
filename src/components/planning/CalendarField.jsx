@@ -86,18 +86,39 @@ function MonthGrid({ value, year, onYearChange, onSelect }) {
   );
 }
 
-export default function CalendarField({ id, value, onChange, mode = "date", minDate, placeholder = "Choose a date" }) {
+export default function CalendarField({
+  id,
+  value,
+  onChange,
+  mode = "date",
+  minDate,
+  minDateFromTomorrow = false,
+  placeholder = "Choose a date",
+}) {
   const [open, setOpen] = useState(false);
   const [yearOverride, setYearOverride] = useState(null);
+  const [tomorrow, setTomorrow] = useState(null);
 
   const selected = toDate(value, mode);
-  const earliest = minDate ? toDate(minDate, "date") : undefined;
+  const earliest = minDate
+    ? toDate(minDate, "date")
+    : minDateFromTomorrow && tomorrow
+      ? toDate(tomorrow, "date")
+      : undefined;
   const year = yearOverride ?? selected?.getFullYear() ?? new Date().getFullYear();
 
   const label = selected ? format(selected, mode === "month" ? "MMMM yyyy" : "EEE d MMM yyyy") : placeholder;
+  const handleOpenChange = (nextOpen) => {
+    if (nextOpen && minDateFromTomorrow) {
+      const date = new Date();
+      date.setDate(date.getDate() + 1);
+      setTomorrow(format(date, "yyyy-MM-dd"));
+    }
+    setOpen(nextOpen);
+  };
 
   return (
-    <Popover open={open} onOpenChange={setOpen}>
+    <Popover open={open} onOpenChange={handleOpenChange}>
       <PopoverTrigger asChild>
         <button
           type="button"
