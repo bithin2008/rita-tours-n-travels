@@ -1,10 +1,14 @@
 import nodemailer from "nodemailer";
-import { enquiryNotificationTemplate, autoReplyTemplate } from "@/lib/email-templates";
+import {
+  autoReplyTemplate,
+  enquiryNotificationTemplate,
+  tourPlanningThankYouTemplate,
+} from "@/lib/email-templates";
 
 export async function POST(request) {
   try {
     const body = await request.json();
-    const { name, email, topic, message, language, currency, journeyType } = body;
+    const { name, email, topic, message, language, currency, journeyType, destination, source } = body;
 
     if (!name || !email || !message) {
       return new Response(JSON.stringify({ error: "Missing required fields" }), {
@@ -44,16 +48,36 @@ export async function POST(request) {
       to: toEmail,
       subject: `New enquiry: ${topic}`,
       text: `Name: ${name}\nEmail: ${email}\nTopic: ${topic}\nLanguage: ${language || "en"}\nCurrency: ${currency || "EUR"}\n\nMessage:\n${message}`,
-      html: enquiryNotificationTemplate({ name, email, topic, message, language, currency, tour_type: journeyType }),
+      html: enquiryNotificationTemplate({
+        name,
+        email,
+        topic,
+        message,
+        language,
+        currency,
+        destination,
+        tour_type: journeyType,
+        isTourPlanning: source === "tour-planning",
+      }),
     });
 
-    // Auto-reply to the visitor
+    const customerEmail =
+      source === "tour-planning"
+        ? {
+            subject: "Thank you for submitting your tour plan — RITA Tours N Travels",
+            text: `Hi ${name},\n\nThank you for submitting your tour-planning form. A named planner will review your request and reply within one business day.\n\nYour trip details:\n${message}\n\nBest regards,\nThe RITA team`,
+            html: tourPlanningThankYouTemplate({ name, topic, destination, message }),
+          }
+        : {
+            subject: "We received your message — RITA Tours N Travels",
+            text: `Hi ${name},\n\nThank you for reaching out to RITA Tours N Travels. We've received your enquiry about "${topic}" and will get back to you within one business day.\n\nBest regards,\nThe RITA team`,
+            html: autoReplyTemplate({ name, topic, destination, message }),
+          };
+
     await transporter.sendMail({
       from: `"RITA Tours N Travels" <${smtpFrom}>`,
       to: email,
-      subject: "We received your message — RITA Tours N Travels",
-      text: `Hi ${name},\n\nThank you for reaching out to RITA Tours N Travels. We've received your enquiry about "${topic}" and will get back to you within one business day.\n\nBest regards,\nThe RITA team`,
-      html: autoReplyTemplate({ name, topic, message }),
+      ...customerEmail,
     });
 
     return new Response(JSON.stringify({ success: true }), {

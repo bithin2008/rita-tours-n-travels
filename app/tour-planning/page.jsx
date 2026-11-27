@@ -22,6 +22,13 @@ const moods = getMoods();
 const STEPS = ["Trip basics", "Style & budget", "Your details"];
 const PACE_LABELS = { slow: "Slow — long stays", balanced: "Balanced", full: "Full — see everything" };
 const FLEX_LABELS = { fixed: "fixed dates", flexible: "flexible dates" };
+const STAY_LABELS = {
+  boutique: "Boutique hotels",
+  guesthouse: "Family-run guesthouses",
+  apartment: "Apartments",
+  luxury: "Luxury hotels",
+  any: "No preference",
+};
 
 const emptyForm = {
   destination: "",
@@ -102,15 +109,26 @@ export default function TourPlanningPage() {
     setError("");
     setStatus("sending");
     try {
+      const styleNames = moods.filter((mood) => data.styles.includes(mood.id)).map((mood) => mood.title);
       const message = [
-        "Custom itinerary request",
-        ...recap.map((item) => `${item.label}: ${item.value}`),
-        `Preferred stays: ${data.stay}`,
-        data.phone ? `Phone: ${data.phone}` : null,
-        data.notes ? `Notes: ${data.notes}` : null,
-      ]
-        .filter(Boolean)
-        .join("\n");
+        `Name: ${data.name.trim()}`,
+        `Email: ${data.email.trim()}`,
+        `Destination: ${data.destination || "Undecided"}`,
+        `Arrival date: ${data.startDate || "Not specified"}`,
+        `Departure date: ${data.endDate || "Not specified"}`,
+        `Date flexibility: ${FLEX_LABELS[data.flexibility] || data.flexibility}`,
+        `Adults: ${data.adults}`,
+        `Children: ${data.children}`,
+        `Budget per person: €${Number(data.budget).toLocaleString("en-US")}`,
+        `Travel pace: ${PACE_LABELS[data.pace] || data.pace}`,
+        `Travel style: ${styleNames.length ? styleNames.join(", ") : "Open to suggestions"}`,
+        `Preferred stays: ${STAY_LABELS[data.stay] || data.stay}`,
+        `Phone or WhatsApp: ${data.phone.trim() || "Not provided"}`,
+        `Additional notes: ${data.notes.trim() || "None"}`,
+        "Consent to be contacted: Yes",
+        `Language: ${language}`,
+        `Currency preference: ${currency}`,
+      ].join("\n");
 
       const created = await createLead({
         type: "enquiry",
@@ -124,6 +142,25 @@ export default function TourPlanningPage() {
         consent: true,
         source: "tour-planning",
       });
+
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: data.name.trim(),
+          email: data.email.trim(),
+          topic: "Custom itinerary request",
+          destination: data.destination,
+          message,
+          language,
+          currency,
+          source: "tour-planning",
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send planning request email");
+      }
 
       setResult({ reference: created?.id ? created.id.slice(-6).toUpperCase() : null });
       setStatus("success");

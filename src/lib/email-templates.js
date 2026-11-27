@@ -6,13 +6,43 @@ const SUPPORT_EMAIL = "noreply.ritatravel@gmail.com";
 const HERO_IMAGE = "https://rita-tours-n-travels.vercel.app/images/email-template/banner-01.jpg";
 const LOGO_IMAGE = "https://rita-tours-n-travels.vercel.app/images/logo.jpg";
 
+function escapeHtml(value) {
+  return String(value ?? "").replace(/[&<>"']/g, (character) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;",
+  })[character]);
+}
 
-export function enquiryNotificationTemplate({ name, email, topic, message, language, currency, tour_title, destination, hero_image, tour_type }) {
-  const ttitle = tour_title || topic || "";
-  const dest = destination || "";
-  const hero = hero_image || HERO_IMAGE;
-  const type = tour_type || "";
-  const msg = (message || "").replace(/\n/g, "<br>");
+export function enquiryNotificationTemplate({
+  name,
+  email,
+  topic,
+  message,
+  language,
+  currency,
+  tour_title,
+  destination,
+  hero_image,
+  tour_type,
+  isTourPlanning = false,
+}) {
+  const ttitle = escapeHtml(tour_title || topic || "");
+  const dest = escapeHtml(destination || "");
+  const hero = escapeHtml(hero_image || HERO_IMAGE);
+  const safeName = escapeHtml(name);
+  const safeEmail = escapeHtml(email);
+  const type = escapeHtml(tour_type || "");
+  const msg = escapeHtml(message).replace(/\r?\n/g, "<br>");
+  const notificationHeading = isTourPlanning ? "New Tour Planning Request" : `${safeName} wants to know more`;
+  const notificationIntro = isTourPlanning
+    ? "A customer has submitted a tour-planning request. Review the trip details below and reply within one business day."
+    : "A new enquiry has arrived from the tour page. Reply within one business day to keep the response time promise made on the website.";
+  const notificationPreheader = isTourPlanning
+    ? `${safeName} submitted a tour-planning request for ${dest}. Reply within one business day.`
+    : `${safeName} just enquired about ${ttitle} in ${dest}. Reply within one business day.`;
   return `<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"><head><base target="_blank">
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,7 +78,7 @@ body, table, td, a { -webkit-font-smoothing: antialiased; }
 </head>
 <body style="margin:0; padding:0; background-color:#eef3fa; width:100%;">
   <div style="display:none; font-size:1px; color:#eef3fa; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden;">
-    ${name} just enquired about ${ttitle} in ${dest}. Reply within one business day.
+    ${notificationPreheader}
   </div>
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%; background-color:#eef3fa;">
     <tbody><tr><td align="center" style="padding:30px 12px 40px 12px;">
@@ -73,17 +103,17 @@ body, table, td, a { -webkit-font-smoothing: antialiased; }
             
           </td></tr>
           <tr><td style="padding:30px 34px 0 34px;" class="pad">
-            <div class="h1" style="font-family:'Poppins','Segoe UI',Arial,sans-serif; font-size:27px; line-height:34px; font-weight:700; color:#0a1f44; letter-spacing:-0.5px;">${name} wants to know more</div>
-            <div class="body-text" style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:14.5px; line-height:25px; color:#3f5578; padding-top:10px;">A new enquiry has arrived from the tour page. Reply within one business day to keep the response time promise made on the website.</div>
+            <div class="h1" style="font-family:'Poppins','Segoe UI',Arial,sans-serif; font-size:27px; line-height:34px; font-weight:700; color:#0a1f44; letter-spacing:-0.5px;">${notificationHeading}</div>
+            <div class="body-text" style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:14.5px; line-height:25px; color:#3f5578; padding-top:10px;">${notificationIntro}</div>
           </td></tr>
           <tr><td style="padding:24px 34px 0 34px;" class="pad">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%; background-color:#f7fafd; border:1px solid #e6ecf6; border-radius:18px;">
               <tbody><tr><td style="padding:6px 22px 20px 22px;">
                 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody>
                   <tr><td class="row-label" style="padding:14px 0 4px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:9.5px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#93a5c0; width:38%;">Name</td>
-                  <td class="row-value" style="padding:14px 0 4px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:14px; font-weight:600; color:#0a1f44;">${name}</td></tr>
+                  <td class="row-value" style="padding:14px 0 4px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:14px; font-weight:600; color:#0a1f44;">${safeName}</td></tr>
                   <tr><td class="row-label" style="padding:4px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:9.5px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#93a5c0; width:38%;">Email</td>
-                  <td class="row-value" style="padding:4px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:14px; color:#1f69ff; word-break:break-word;"><a href="mailto:${email}" style="color:#1f69ff;">${email}</a></td></tr>
+                  <td class="row-value" style="padding:4px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:14px; color:#1f69ff; word-break:break-word;"><a href="mailto:${safeEmail}" style="color:#1f69ff;">${safeEmail}</a></td></tr>
                   ${type ? `<tr><td class="row-label" style="padding:4px 0 12px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:9.5px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#93a5c0; width:38%;">Tour type</td>
                   <td class="row-value" style="padding:4px 0 12px 0; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:14px; color:#0a1f44;">${type}</td></tr>` : `<tr><td style="padding:4px 0 12px 0;"></td><td style="padding:4px 0 12px 0;"></td></tr>`}
                 </tbody></table>
@@ -101,7 +131,7 @@ body, table, td, a { -webkit-font-smoothing: antialiased; }
           <tr><td style="padding:28px 34px 10px 34px;" class="pad">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tbody><tr>
               <td class="btn-td" align="left" bgcolor="#1f69ff" style="border-radius:26px; background-color:#1f69ff;">
-                <a class="btn-a" href="mailto:${email}" style="display:inline-block; padding:15px 32px; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:14px; font-weight:600; color:#ffffff; border-radius:26px; letter-spacing:0.1px;">Reply to ${name}</a>
+                <a class="btn-a" href="mailto:${safeEmail}" style="display:inline-block; padding:15px 32px; font-family:'Inter',Helvetica,Arial,sans-serif; font-size:14px; font-weight:600; color:#ffffff; border-radius:26px; letter-spacing:0.1px;">Reply to ${safeName}</a>
               </td>
             </tr></tbody></table>
           </td></tr>
@@ -127,12 +157,34 @@ body, table, td, a { -webkit-font-smoothing: antialiased; }
 </body></html>`;
 }
 
-export function autoReplyTemplate({ name, topic, first_name, tour_title, destination, message, hero_image }) {
-  const fn = first_name || (name ? name.split(" ")[0] : "there");
-  const title = tour_title || topic || "your enquiry";
-  const dest = destination || topic || "";
-  const hero = hero_image || HERO_IMAGE;
-  const msg = (message || "").replace(/\n/g, "<br>");
+export function autoReplyTemplate({
+  name,
+  topic,
+  first_name,
+  tour_title,
+  destination,
+  message,
+  hero_image,
+  emailTitle = "RITA Tours N Travels - Enquiry Confirmation",
+  preheader,
+  heading = "Message received",
+  confirmation,
+}) {
+  const fn = escapeHtml(first_name || (name ? name.split(" ")[0] : "there"));
+  const rawTitle = tour_title || topic || "your enquiry";
+  const title = escapeHtml(rawTitle);
+  const dest = escapeHtml(destination || topic || "");
+  const hero = escapeHtml(hero_image || HERO_IMAGE);
+  const msg = escapeHtml(message).replace(/\r?\n/g, "<br>");
+  const safeEmailTitle = escapeHtml(emailTitle);
+  const safePreheader = escapeHtml(
+    preheader ||
+    `Your enquiry about ${rawTitle} has reached our planning team. A named planner will reply within one business day.`,
+  );
+  const safeHeading = escapeHtml(heading);
+  const confirmationMessage = confirmation
+    ? `Hi <strong style="color:#0a1f44;">${fn}</strong>, ${escapeHtml(confirmation)}`
+    : `Hi <strong style="color:#0a1f44;">${fn}</strong>, thank you for reaching out to RITA Tours N Travels. We have your details and a named planner is reading them now. Expect a reply within one business day.`;
   const tours = (featuredTours.items || []).slice(0, 3);
   const cells = tours.map((t, i) => `<td class="card-col" valign="top" style="width:33.33%;${i < 2 ? " padding-right:10px;" : ""}">
     <a href="${SITE_URL}/tours/${t.id}" style="text-decoration:none; display:block;">
@@ -143,10 +195,10 @@ export function autoReplyTemplate({ name, topic, first_name, tour_title, destina
   </td>`).join("");
   return `<!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>RITA Tours N Travels - Enquiry Confirmation</title></head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>${safeEmailTitle}</title></head>
 <body style="margin:0; padding:0; background-color:#eef3fa; width:100%;">
   <div style="display:none; font-size:1px; color:#eef3fa; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden;">
-    Your enquiry about ${title} has reached our planning team. A named planner will reply within one business day.
+    ${safePreheader}
   </div>
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%; background-color:#eef3fa;">
     <tbody><tr>
@@ -165,9 +217,9 @@ export function autoReplyTemplate({ name, topic, first_name, tour_title, destina
             </td></tr>
             <tr><td style="padding:0; background-color:#0a1f44; line-height:0;"><img src="${hero}" width="600" height="252" alt="${dest}" style="width:100%; max-width:600px; height:252px; object-fit:cover;"></td></tr>
             <tr><td style="padding:32px 34px 0 34px;">
-              <div style="font-family:'Poppins','Segoe UI',Arial,sans-serif; font-size:30px; line-height:37px; font-weight:700; color:#0a1f44; letter-spacing:-0.6px;">Message received</div>
+              <div style="font-family:'Poppins','Segoe UI',Arial,sans-serif; font-size:30px; line-height:37px; font-weight:700; color:#0a1f44; letter-spacing:-0.6px;">${safeHeading}</div>
               <div style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:15px; line-height:26px; color:#3f5578; padding-top:14px;">
-                Hi <strong style="color:#0a1f44;">${fn}</strong>, thank you for reaching out to RITA Tours N Travels. We have your details and a named planner is reading them now. Expect a reply within one business day.
+                ${confirmationMessage}
               </div>
             </td></tr>
             <tr><td style="padding:26px 34px 0 34px;">
@@ -177,7 +229,7 @@ export function autoReplyTemplate({ name, topic, first_name, tour_title, destina
                   <td style="padding:20px 22px;">
                     <div style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:9.5px; font-weight:700; letter-spacing:2.1px; text-transform:uppercase; color:#1f69ff; padding-bottom:8px;">${title}</div>
                     
-                    <div style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:12.5px; line-height:19px; color:#6b7f9e; padding-top:4px;">${dest}</div>
+                    <div style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:12.5px; line-height:19px; color:#6b7f9e; padding-top:4px;"><b>${dest}</b></div>
                     <div style="border-top:1px solid #e6ecf6; margin:16px 0 14px 0; font-size:0; line-height:0;">&nbsp;</div>
                     <div style="font-family:'Inter',Helvetica,Arial,sans-serif; font-size:13.5px; line-height:23px; color:#3f5578; word-break:break-word;">${msg}</div>
                   </td>
@@ -214,4 +266,18 @@ export function autoReplyTemplate({ name, topic, first_name, tour_title, destina
     </td></tr></tbody></table>
 </body>
 </html>`;
+}
+
+export function tourPlanningThankYouTemplate({ name, topic, destination, message }) {
+  return autoReplyTemplate({
+    name,
+    topic,
+    destination,
+    message,
+    emailTitle: "Thank you for submitting your tour plan — RITA Tours N Travels",
+    preheader: "Thank you for sharing your trip plans. A named planner will reply within one business day.",
+    heading: "Thank you for submitting your tour plan",
+    confirmation:
+      "thank you for submitting your tour-planning form. A named planner is reviewing your trip details and will reply within one business day.",
+  });
 }
